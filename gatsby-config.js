@@ -10,6 +10,21 @@ module.exports = {
         name: `src`,
         path: `${__dirname}/src/`
       }
+    }, "gatsbyt-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 850,
+              linkImagesToOriginal: false,
+            }
+          }
+        ]
+      }
     }
   ],
 };
