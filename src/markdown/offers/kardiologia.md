@@ -1,6 +1,6 @@
 ---
 title: "Kardiologia"
-icon: "../assets/icons/kardiologia.svg"
+icon:  "../assets/icons/kardiologia.svg"
 slug: "/oferta/kardiologia"
 ---
 

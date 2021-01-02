@@ -5,12 +5,20 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`
-      }
-    }, "gatsbyt-plugin-sharp",
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -21,10 +29,10 @@ module.exports = {
             options: {
               maxWidth: 850,
               linkImagesToOriginal: false,
-            }
-          }
-        ]
-      }
-    }
+            },
+          },
+        ],
+      },
+    },
   ],
 };
