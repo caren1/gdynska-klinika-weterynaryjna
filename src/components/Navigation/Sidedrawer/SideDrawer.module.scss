@@ -1,0 +1,55 @@
+.SideDrawer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #005826;
+    padding: 1rem;
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+
+    @media (min-width: 745px) {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+.Exit {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .Exit:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in
+  }
+  .Exit:before, .Exit:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: #ffffff;
+  }
+  .Exit:before {
+    transform: rotate(45deg);
+  }
+  .Exit:after {
+    transform: rotate(-45deg);
+  }

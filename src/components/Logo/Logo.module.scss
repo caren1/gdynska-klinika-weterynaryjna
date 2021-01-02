@@ -1,0 +1,22 @@
+.Logo {
+    padding: 8px;
+    height: 180px;
+    max-height: 180px;
+    margin-right: 2rem;
+
+    img {
+        max-height: 100%;
+    }
+
+    @media screen and (max-width: 745px) {
+        max-height: 100%;
+    }
+
+    &:hover{
+        transform: scale(1.01);
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+    }
+
+}
+
