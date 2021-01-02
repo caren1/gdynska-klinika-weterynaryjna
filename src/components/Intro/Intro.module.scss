@@ -4,5 +4,9 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 -280px;
+    background-position: bottom ;
+
+    @media (max-width: 745px) {
+        background-position: center;
+    }
 }

@@ -5,7 +5,9 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: #005826;
+    background-color: rgba(0, 88, 38, 0.4);
+    backdrop-filter: blur(0.3rem);
+    background-clip: padding-box;
     padding: 1rem;
     transition: transform 0.3s ease-out;
     display: flex;
@@ -13,6 +15,7 @@
     justify-content: center;
     text-align: center;
     font-size: 2.5rem;
+    opacity: 1;
 
     @media (min-width: 745px) {
         display: none;
