@@ -1,0 +1,26 @@
+.Cta {
+    max-width: 50%;
+    height: 100%;
+    text-align: right;
+
+    .Heading {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1;
+        font-family: 'Playfair Display';
+    }
+
+    .Paragraph {
+        font-family: 'Lato';
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 300;
+        max-width: 75%;
+        display: block;
+        margin-left: auto;
+    }
+
+    .Buttons {
+        margin-top: 2.8rem;
+    }
+}

@@ -1,6 +1,9 @@
 import * as React from "react"
 import './index.css'
 import "@fontsource/playfair-display"
+import "@fontsource/playfair-display/500.css"
+import "@fontsource/playfair-display/600.css"
+import "@fontsource/playfair-display/700.css"
 import "@fontsource/lato"
 import "@fontsource/lato/300.css"
 

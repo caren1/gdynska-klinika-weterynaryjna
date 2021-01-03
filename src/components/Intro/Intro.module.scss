@@ -5,11 +5,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    padding: 2rem;
+   
 
     @media (max-width: 745px) {
         background-position: center;
         height: 100%;
     }
+}
+
+.IntroWrapper {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .Buttons {

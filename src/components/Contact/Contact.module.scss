@@ -1,0 +1,54 @@
+.Contact {
+    max-width: 400px;
+    // max-height: 100%;
+    height: 100%;
+    padding: 3rem 1rem;
+    font-family: 'Lato';
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 88, 38, 0.5);
+    backdrop-filter: blur(0.3rem);
+    background-clip: padding-box;
+    // position: relative;
+    // bottom: -36px;
+    // left: -10%;
+    
+}
+
+.Heading {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+
+    span {
+        font-size: 1.2rem;
+    }
+}
+
+.ContactInfo {
+    margin-top: 2rem;
+}
+
+.ContactList {
+    list-style-type: none;
+    line-height: 1.2;
+
+    .ListItem {
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .IconContainer {
+        padding: 10px;
+        margin-right: 10px;
+
+        img {
+            max-height: 30px;
+        }
+    }
+}
