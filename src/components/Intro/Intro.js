@@ -3,7 +3,6 @@ import introStyles from "./Intro.module.scss";
 
 import Contact from "../Contact/Contact";
 import Cta from '../Cta/Cta'
-import Button from "../UI/Button/Button";
 
 const Intro = () => {
   return (
@@ -12,11 +11,6 @@ const Intro = () => {
         <Contact />
         <Cta />
       </div>
-
-      {/* <div className={introStyles.Buttons}>
-        <Button type="Call" />
-        <Button type="Route" />
-      </div> */}
     </section>
   );
 };

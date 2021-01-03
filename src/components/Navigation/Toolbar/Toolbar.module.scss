@@ -11,13 +11,14 @@
     align-items: center;
     padding: 2rem;
     z-index: 90;
+    // margin-bottom: 250px;
 
     nav {
         align-self: flex-start;
 
         hr {
             border: 0.1px solid #005826;
-            opacity: 0.8;
+            opacity: 0.7;
         }
     }
 }
