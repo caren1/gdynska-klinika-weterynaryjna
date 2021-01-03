@@ -6,6 +6,7 @@ import Button from "../UI/Button/Button";
 const Cta = () => {
   return (
     <div className={ctaStyles.Cta}>
+      <div className={ctaStyles.CtaInfo}>
       <h1 className={ctaStyles.Heading}>
         Nowoczesna klinika weterynaryjna w Gdyni
       </h1>
@@ -14,6 +15,8 @@ const Cta = () => {
         szerokie spektrum nowoczesnych badań diagnostycznych oraz opiekę
         ambulatoryjną i szpitalną
       </p>
+      </div>
+      
       <div className={ctaStyles.Buttons}>
         <Button type="Call" />
         <Button type="Route" />

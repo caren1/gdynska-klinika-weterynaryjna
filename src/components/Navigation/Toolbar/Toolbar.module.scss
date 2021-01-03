@@ -21,6 +21,10 @@
             opacity: 0.7;
         }
     }
+
+    @media (max-width: 720px){
+        height: 180px;
+    }
 }
 
 .DesktopOnly {

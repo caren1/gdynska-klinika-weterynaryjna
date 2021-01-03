@@ -13,6 +13,16 @@
 
     @media (max-width: 745px) {
         text-align: center;
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width:600px){
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 1rem;
     }
 
     .Heading {
@@ -28,6 +38,11 @@
 
         @media (max-width: 840px) {
             font-size: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 1.6rem;
+            
         }
     }
 
@@ -51,9 +66,20 @@
         @media (max-width: 840px) {
             font-size: 1.4rem;
         }
+
+        @media (max-width: 600px) {
+            font-size: 1rem;
+            margin: 0;
+        }
     }
 
     .Buttons {
         margin-top: 2.8rem;
+
+        @media (max-width: 600px) {
+            margin: 3rem 0;
+        }
+
+        
     }
 }
