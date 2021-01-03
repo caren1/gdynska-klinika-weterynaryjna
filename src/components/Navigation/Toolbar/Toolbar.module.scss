@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem ;
+    padding: 2rem;
     z-index: 90;
 
     nav {
@@ -17,12 +17,13 @@
 
         hr {
             border: 0.1px solid #005826;
+            opacity: 0.8;
         }
-    } 
+    }
 }
 
 .DesktopOnly {
-    width:100%;
+    width: 100%;
     align-self: flex-end;
 }
 

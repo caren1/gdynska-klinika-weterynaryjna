@@ -16,6 +16,8 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@fontsource/lato": "^4.1.0",
+    "@fontsource/playfair-display": "^4.1.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.11.2",

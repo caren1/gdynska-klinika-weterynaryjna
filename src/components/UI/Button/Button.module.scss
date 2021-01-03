@@ -1,0 +1,50 @@
+.Call {
+    background-color: #619176;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    font-family: "Lato";
+
+    &:hover {
+        background-color: white;
+        color: #619176;
+        cursor: pointer;
+    }
+}
+
+.Route {
+    background-color: transparent;
+    color: #619176;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    border: 1px solid #619176;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    font-family: "Lato";
+
+    &:hover {
+        background-color: white;
+        color: #619176;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+}
+
+.NavCall {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    font-family: "Lato";
+
+    &:hover {
+        color: #005826;
+        cursor: pointer;
+
+    }
+}

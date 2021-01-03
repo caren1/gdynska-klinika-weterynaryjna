@@ -1,5 +1,8 @@
 import * as React from "react"
 import './index.css'
+import "@fontsource/playfair-display"
+import "@fontsource/lato"
+import "@fontsource/lato/300.css"
 
 import Layout from '../components/Layout/Layout'
 import Intro from '../components/Intro/Intro'

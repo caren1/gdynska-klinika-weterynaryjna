@@ -1,6 +1,6 @@
 import React from "react";
 import logoStyles from "./Logo.module.scss";
-import logo from '../../assets/logos/GKW-main-vertical-logo.svg'
+import logo from "../../assets/logos/GKW-main-vertical-logo.svg";
 
 const Logo = (props) => {
   return (

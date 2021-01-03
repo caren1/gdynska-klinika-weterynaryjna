@@ -4,9 +4,16 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom ;
+    background-position: bottom;
 
     @media (max-width: 745px) {
         background-position: center;
+        height: 100%;
     }
+}
+
+.Buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
