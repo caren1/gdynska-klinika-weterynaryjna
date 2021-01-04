@@ -3,6 +3,10 @@
     max-height: 100%;
     max-width: 100%;
     padding: 2rem;
+
+    @media (max-width: 680px) {
+        padding: 1rem;
+    }
 }
 
 .OfferWrapper {
@@ -10,11 +14,17 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 200px;
+    // margin-top: 200px;
     max-width: 80%;
-margin: 200px auto 0 auto;
+    margin: 100px auto 0 auto;
 
-    @media (in-width: 745px) {
-        flex-direction: column;
+    @media (max-width: 1035px) {
+        max-width: 95%;
     }
+
+    @media (max-width: 680px) {
+        margin: 90px auto 0 auto;
+    }
+
+   
 }
