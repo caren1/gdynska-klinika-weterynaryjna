@@ -1,0 +1,13 @@
+.Offer {
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    @media (max-width: 745px) {
+        flex-direction: column;
+    }
+}
