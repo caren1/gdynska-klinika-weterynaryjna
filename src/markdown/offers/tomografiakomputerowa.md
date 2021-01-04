@@ -1,6 +1,6 @@
 ---
 title: "Tomografia komputerowa"
-icon: "../assets/icons/tomografiakomputerowa.svg"
+icon: "../assets/icons/tomografia.svg"
 slug: "/oferta/tomografia-komputerowa"
 ---
 

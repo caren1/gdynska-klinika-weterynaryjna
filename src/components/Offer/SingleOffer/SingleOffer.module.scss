@@ -1,0 +1,43 @@
+.Link {
+    text-decoration: none;
+    font-family: 'Lato';
+    color: black;
+    font-weight: bolder;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
+    }
+}
+
+.SingleOffer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    // border: 1px solid black;
+    width: 120px;
+    height: 150px;
+}
+
+.IconWrapper {
+    // width: 100px;
+    // height: 100px;
+    // margin-bottom: 1rem;
+    padding: 1rem;
+
+    > img {
+        max-width: 100%;
+    }
+}
+
+.TextWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
