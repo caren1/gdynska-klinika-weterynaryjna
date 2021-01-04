@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import logoStyles from "./Logo.module.scss";
 import mainLogo from "../../assets/logos/GKW-main-vertical-logo.svg";
-import secondaryLogo from '../../assets/logos/GKW-main-horizontal.svg'
+import secondaryLogo from '../../assets/logos/GKW-horizontal-greypaw-whitecross.svg'
+import mobileLogo from '../../assets/logos/GKW-main-horizontal.svg'
 
 const Logo = (props) => {
 
@@ -17,10 +18,15 @@ const Logo = (props) => {
   });
 
   let logoViewport = null;
+
   if (isDesktop){
     logoViewport = mainLogo
   }else{
-    logoViewport = secondaryLogo;
+    logoViewport = mobileLogo;
+  }
+
+  if (props.secondary){
+    logoViewport = secondaryLogo
   }
 
 

@@ -25,7 +25,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Intro />
-      <Offer/>
+      <Offer />
     </Layout>
   )
 }

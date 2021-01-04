@@ -49,15 +49,17 @@
     color: black;
     border-radius: 5px;
     padding: 1rem 2rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.2s ease-in;
     font-family: "Lato";
+    font-weight: bolder;
     margin: .8rem;
 
     &:hover {
         color: #005826;
         cursor: pointer;
+        transform: scale(1.05);
 
     }
 

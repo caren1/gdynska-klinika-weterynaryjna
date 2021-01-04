@@ -11,6 +11,8 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 200px;
+    max-width: 80%;
+margin: 200px auto 0 auto;
 
     @media (in-width: 745px) {
         flex-direction: column;
