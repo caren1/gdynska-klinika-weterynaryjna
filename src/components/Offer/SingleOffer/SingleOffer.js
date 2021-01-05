@@ -10,7 +10,7 @@ const SingleOffer = ({ title, icon, slug }) => {
           <img className={singleOfferStyles.Icon} src={icon} alt={title} />
         </div>
         <div className={singleOfferStyles.TextWrapper}>
-        <p className={singleOfferStyles.Title}>{title}</p>
+          <p className={singleOfferStyles.Title}>{title}</p>
         </div>
       </div>
     </Link>

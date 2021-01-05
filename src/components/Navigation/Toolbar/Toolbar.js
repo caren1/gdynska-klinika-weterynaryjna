@@ -7,7 +7,6 @@ import DrawerToggle from "../Sidedrawer/DrawerToggle/DrawerToggle";
 import Button from "../../UI/Button/Button";
 
 const Toolbar = (props) => {
-  console.log("tooooooolbar !!!!!!!! props : ", props);
   const [scrollState, setScrollState] = useState(false);
   const navRef = useRef();
   navRef.current = scrollState;
@@ -26,15 +25,12 @@ const Toolbar = (props) => {
 
   let toolbar = null;
 
-  if (scrollState) {
+  if (scrollState || props.detailed) {
     toolbar = (
       <header id="header" className={toolbarStyles.SecondaryToolbar}>
         <Logo secondary={true} />
 
-        <DrawerToggle
-          secondary={true}
-          clicked={props.drawerToggleClicked}
-        />
+        <DrawerToggle secondary={true} clicked={props.drawerToggleClicked} />
 
         <nav className={toolbarStyles.DesktopOnlySecondary}>
           <ul>
@@ -49,7 +45,7 @@ const Toolbar = (props) => {
             </li>
           </ul>
           <Button type="NavCall" />
-          <DrawerToggle clicked={props.drawerToggleClicked}/>
+          <DrawerToggle clicked={props.drawerToggleClicked} />
         </nav>
       </header>
     );
@@ -67,37 +63,6 @@ const Toolbar = (props) => {
       </header>
     );
   }
-
-  if (props.detailed) {
-    toolbar = (
-      <header id="header" className={toolbarStyles.SecondaryToolbar}>
-        <Logo secondary={true} />
-
-        <DrawerToggle
-          secondary={true}
-          clicked={props.drawerToggleClicked}
-        />
-
-        <nav className={toolbarStyles.DesktopOnlySecondary}>
-          <ul>
-            <li>
-              Poniedziałek - Piątek : <strong>7 - 22</strong>
-            </li>
-            <li>
-              Sobota : <strong>8 - 22</strong>
-            </li>
-            <li>
-              Niedziela : <strong>10 - 19</strong>
-            </li>
-          </ul>
-          <Button type="NavCall" />
-          <DrawerToggle clicked={props.drawerToggleClicked}/>
-        </nav>
-      </header>
-    );
-  }
-
-
 
   return toolbar;
 };

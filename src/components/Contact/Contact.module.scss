@@ -1,11 +1,9 @@
 .Contact {
     max-width: 350px;
     height: 60%;
-
     padding: 2rem;
     font-family: 'Lato';
     display: flex;
-
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 88, 38, 0.5);
@@ -20,7 +18,7 @@
         left: 0;
     }
 
-    @media (max-width: 745px){
+    @media (max-width: 745px) {
         max-width: 98%;
         bottom: 0;
         height: 200px;
@@ -34,7 +32,7 @@
         height: 80%;
         width: 100%;
         text-align: left;
-        padding: 1rem 1rem; 
+        padding: 1rem 1rem;
     }
 
 }
@@ -48,7 +46,7 @@
     span {
         font-size: 1.2rem;
 
-        @media (max-width: 600px){
+        @media (max-width: 600px) {
             font-size: 1rem;
         }
     }
@@ -57,7 +55,7 @@
         font-size: 1.2rem;
     }
 
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
         font-size: 1rem;
     }
 }
@@ -65,7 +63,7 @@
 .ContactInfo {
     margin-top: 2rem;
 
-    @media (max-width: 745px){
+    @media (max-width: 745px) {
         margin-top: 0;
     }
 }
@@ -75,7 +73,7 @@
     line-height: 1.2;
 
 
-    @media (max-width: 745px){
+    @media (max-width: 745px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,19 +92,18 @@
         color: white;
         margin-bottom: 10px;
 
-        @media (max-width: 745px){
+        @media (max-width: 745px) {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             margin: 0 10px
         }
+
         @media (max-width: 600px) {
             flex-direction: row;
             margin: 0;
         }
-
-        
     }
 
     .IconContainer {
@@ -116,17 +113,14 @@
         img {
             max-height: 30px;
         }
-        
+
         @media (max-width: 745px) {
             margin: 0;
         }
-        
     }
 
-    
-
-    .ListParagraph{
-        @media (max-width: 745px){
+    .ListParagraph {
+        @media (max-width: 745px) {
             font-size: 12px;
         }
     }

@@ -1,0 +1,24 @@
+.NotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+
+    h1 {
+        margin-top: 100px;
+        font-size: 2.8rem;
+        font-family: 'Playfair Display';
+        margin-bottom: 1rem;
+        max-width: 50%;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}

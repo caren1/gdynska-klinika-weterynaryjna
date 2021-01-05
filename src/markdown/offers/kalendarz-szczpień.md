@@ -4,7 +4,7 @@ icon: "../assets/icons/kalendarzszczepien.svg"
 slug: "/oferta/kalendarzszczepien"
 ---
 
-## Sczepienia dla psów:
+### Sczepienia dla psów:
 
 **Szczepienia podstawowe:**
 * I szczepienie: 6-8 tydzień życia
@@ -31,7 +31,7 @@ slug: "/oferta/kalendarzszczepien"
 
 **Przypominamy, że szczepienie przeciwko wściekliźnie jest szczepieniem obowiązkowym na terenie Rzeczpospolitej Polskiej.**
 
-## Sczepienia dla kotów:
+### Sczepienia dla kotów:
 **Szczepienia podstawowe:**
 * I szczepienie: 6-8 tydzień życia
     * Panleukopenia, herpeswirus i kaliciwirus kotów
