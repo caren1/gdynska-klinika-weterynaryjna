@@ -3,6 +3,7 @@ import React from "react";
 import drawerStyles from "./DrawerToggle.module.scss";
 
 const DrawerToggle = (props) => {
+  console.log(props);
   let inlineStyle = props.secondary ? { backgroundColor: "white" } : null;
 
   return (

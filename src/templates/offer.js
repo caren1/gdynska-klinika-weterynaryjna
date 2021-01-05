@@ -1,23 +1,27 @@
 import React from "react";
 import { graphql } from "gatsby";
-
-// console.log('############ DZIAŁA');
+import Layout from "../components/Layout/Layout";
+import offerStyles from "./offer.module.scss";
 
 const Offer = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <div>
-      <h1>{frontmatter.title}</h1>
-      <img
-        src={frontmatter.icon}
-        alt={frontmatter.title}
-      />
-      <div
-        dangerouslySetInnerHTML={{ __html: html }}
-      ></div>
-    </div>
+    <Layout detailed={true}>
+      <section className={offerStyles.Offer}>
+        <div className={offerStyles.OfferWrapper}>
+          <div className={offerStyles.Intro}>
+            <img src={frontmatter.icon} alt={frontmatter.title} />
+            <h1>{frontmatter.title}</h1>
+          </div>
+          <div
+            className={offerStyles.Content}
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
+        </div>
+      </section>
+    </Layout>
   );
 };
 

@@ -5,6 +5,7 @@ import Toolbar from "../Navigation/Toolbar/Toolbar";
 import Sidedrawer from "../Navigation/Sidedrawer/Sidedrawer";
 
 const Layout = (props) => {
+  console.log('layoutprops', props);
   const [showSideDrawer, setSideDrawer] = useState(false);
 
   const onCloseSideDrawer = () => {
@@ -17,7 +18,7 @@ const Layout = (props) => {
 
   return (
     <>
-      <Toolbar drawerToggleClicked={onToggleSideDrawer} />
+      <Toolbar detailed={props.detailed} drawerToggleClicked={onToggleSideDrawer} />
       <Sidedrawer open={showSideDrawer} closed={onCloseSideDrawer} />
       <main className={layoutStyles.Content}>{props.children}</main>
     </>
