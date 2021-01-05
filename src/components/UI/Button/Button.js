@@ -38,7 +38,7 @@ const Button = ({ type }) => {
     case "Back":
       button = (
         <Link to="/" className={buttonStyles.Back}>
-          <a >Wróć do strony głównej</a>
+          <a>Wróć do strony głównej</a>
         </Link>
       );
 

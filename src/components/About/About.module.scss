@@ -1,0 +1,38 @@
+.About {
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+
+    @media (max-width: 900px) {
+        min-height: 100%;
+        padding: 2rem 2rem 0 2rem;
+    }
+}
+
+.CrossVertical {
+    width: 80px;
+    background-color: #005826;
+    height: 75vh;
+    position: absolute;
+    left: 17%;
+    bottom: 0;
+    z-index: -10;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+
+}
+
+.CrossHorizontal {
+    width: 20vw;
+    background-color: #005826;
+    height: 80px;
+    position: absolute;
+    top: 25%;
+    z-index: -10;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
