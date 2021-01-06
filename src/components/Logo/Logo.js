@@ -26,6 +26,8 @@ const Logo = (props) => {
 
   if (props.secondary) {
     logoViewport = secondaryLogo;
+  } else if (props.horizontal) {
+    logoViewport = mobileLogo
   }
 
   return (

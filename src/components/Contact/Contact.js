@@ -6,9 +6,55 @@ import Klinika from "../../assets/icons/klinika.svg";
 import Telefon from "../../assets/icons/telefon.svg";
 import Weterynarz from "../../assets/icons/weterynarz.svg";
 
-const Contact = () => {
-  return (
-    <div className={contactStyles.Contact}>
+
+const Contact = (props) => {
+
+  let contact = null;
+
+  if (props.raw) {
+    contact = (
+      <div className={contactStyles.RawContact}>
+      <h2 className={contactStyles.RawHeading}>
+        Gdyńska Klinika Weterynaryjna <br />{" "}
+        <span>let. wet. Tomasza Brzeskiego</span>
+      </h2>
+      <div className={contactStyles.RawContactInfo}>
+        <ul className={contactStyles.RawContactList}>
+          <li className={contactStyles.RawListItem}>
+            <div>
+              <p className={contactStyles.RawListParagraph}>
+                Poniedziałek - Piątek : 7 - 22
+              </p>
+              <p className={contactStyles.RawListParagraph}>Sobota : 8 - 22</p>
+              <p className={contactStyles.RawListParagraph}>Niedziela : 10 - 19</p>
+            </div>
+          </li>
+          <li className={contactStyles.RawListItem}>
+            <div>
+              <p className={contactStyles.RawListParagraph}>Kielecka 22</p>
+              <p className={contactStyles.ListParagraph}>81-303, Gdynia</p>
+            </div>
+          </li>
+          <li className={contactStyles.RawListItem}>
+            <div>
+              <p className={contactStyles.RawListParagraph}>+48 58 620-55-55</p>
+              <p className={contactStyles.RawListParagraph}>+48 508-072-234</p>
+            </div>
+          </li>
+          <li className={contactStyles.RawListItem}>
+            <div>
+              <p className={contactStyles.RawListParagraph}>klinikagdynia@wp.pl</p>
+              <p className={contactStyles.RawListParagraph}>gkwbiuro@gmail.com</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    )
+
+  } else {
+    contact = (
+      <div className={contactStyles.Contact}>
       <h2 className={contactStyles.Heading}>
         Gdyńska Klinika Weterynaryjna <br />{" "}
         <span>let. wet. Tomasza Brzeskiego</span>
@@ -57,6 +103,14 @@ const Contact = () => {
         </ul>
       </div>
     </div>
+    )
+  }
+
+
+
+
+  return (
+   contact
   );
 };
 

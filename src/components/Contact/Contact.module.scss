@@ -125,3 +125,35 @@
         }
     }
 }
+
+.RawContact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+}
+
+.RawHeading {
+
+    font-weight: 400;
+    font-size: 1.8rem;
+
+    span {
+        font-size: 1.2rem;
+    }
+}
+
+.RawContactList {
+    list-style-type: none;
+    line-height: 1.2;
+}
+
+
+.RawContactInfo {
+    margin-top: 2rem;
+}
+
+.RawListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
