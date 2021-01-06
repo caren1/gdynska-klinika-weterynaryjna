@@ -8,6 +8,7 @@ import Button from "../../UI/Button/Button";
 
 const Toolbar = (props) => {
   const [scrollState, setScrollState] = useState(false);
+
   const navRef = useRef();
   navRef.current = scrollState;
   useEffect(() => {

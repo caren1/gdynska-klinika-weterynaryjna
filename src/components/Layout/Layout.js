@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import layoutStyles from "./Layout.module.scss";
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 import Sidedrawer from "../Navigation/Sidedrawer/Sidedrawer";
 
@@ -22,7 +21,7 @@ const Layout = (props) => {
         drawerToggleClicked={onToggleSideDrawer}
       />
       <Sidedrawer open={showSideDrawer} closed={onCloseSideDrawer} />
-      <main className={layoutStyles.Content}>{props.children}</main>
+      <main>{props.children}</main>
     </>
   );
 };
