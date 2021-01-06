@@ -45,6 +45,7 @@ slug: "/oferta/kalendarzszczepien"
     * I szczepienie: 8-10 tydzień życia
     * II szczepienie: 14-16 tydzień życia
     * Rewakcynacja po roku, następnie co 3 lata
+    
 * Wścieklizna:
     * 12-16 tydzień życia
     * Rewakcynacja po roku, następnie co 3 lata
