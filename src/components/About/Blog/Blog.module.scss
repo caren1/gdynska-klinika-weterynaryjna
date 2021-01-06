@@ -11,51 +11,66 @@
 
     @media (max-width: 900px) {
         position: relative;
-        bottom: 0;
-        // left: 25%;
+        // bottom: -90px;
         height: 100%;
-        // margin-left: auto;
+    }
+
+    @media (max-width: 510px) {
+        width: 90%;
+        left: 0;
+        margin: auto;
     }
 }
 
 .ImageContainer {
-     max-width: 380px;
-     max-height: 380px;
+    max-width: 380px;
+    max-height: 380px;
 
-     @media (max-width: 900px) {
-        //  max-width: 280px;
-        //  max-height: 280px;
-
-        max-width: 30%;
+    @media (max-width: 900px) {
+        max-width: 40%;
         max-height: 50%;
-     }
+        position: absolute;
+        bottom: 0px;
+    }
 
-     img {
-         max-width: 100%;
+    @media (max-width: 510px) {
+        bottom: -35px;
+    }
 
-         
-     }
+    img {
+        max-width: 100%;
+
+
+    }
 }
 
 .InfoContainer {
-    
-    > * {
+
+    @media (max-width: 900px) {
+        margin: 10px 0 10px auto
+    }
+
+    >* {
         margin: 0.3rem 0;
     }
 
     h1 {
         font-family: 'Playfair Display';
         font-size: 2.4rem;
-        // max-width: 60%;
         margin-left: auto;
         line-height: 1.2;
 
         @media (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 510px) {
             font-size: 1.4rem;
+            width: 80%;
         }
     }
 
-    p{
+    p {
         font-family: 'Lato';
         font-size: 1.6rem;
         font-weight: lighter;
@@ -63,21 +78,32 @@
         @media (max-width: 900px) {
             font-size: 1.1rem;
         }
+
+        @media (max-width: 510px) {
+            font-size: 0.9rem;
+        }
     }
 
-    a{
+    a {
         text-decoration: none;
         font-family: 'Playfair Display';
         font-size: 1.2rem;
         color: #619176;
         padding: 6px;
         border-bottom: none;
-        
 
-        &:hover{
+        @media (max-width: 900px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 0.9rem;
+        }
+
+
+        &:hover {
             color: #005826;
             transition: all 0.2s ease-in;
         }
     }
 }
-
