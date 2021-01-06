@@ -1,0 +1,20 @@
+.Staff {
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+    
+}
+
+.CrossVertical {
+    width: 80px;
+    background-color: #005826;
+    height: 100vh;
+    position: absolute;
+    left: 17%;
+    bottom: 0;
+    z-index: -10;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}

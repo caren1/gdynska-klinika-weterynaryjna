@@ -26,6 +26,7 @@ const About = () => {
           paragraph="Blog przeznaczony dla pasjonatów weterynarii."
           blogtext="zobacz blog"
         />
+        <div className={aboutStyles.CrossHorizontalOverCat}></div>
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+import staffStyles from './Staff.module.scss'
+
 const Staff = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
@@ -26,7 +28,13 @@ const Staff = () => {
     `
   );
 
-  return <div></div>;
+  return (
+    <section id="staff" className={staffStyles.Staff}>
+            <div className={staffStyles.CrossVertical}>
+
+            </div>
+    </section>
+    );
 };
 
 export default Staff;
