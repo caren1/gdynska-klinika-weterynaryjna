@@ -1,0 +1,21 @@
+.StaffType {
+    max-height: 100px;
+    max-width: 85%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 120px;
+    z-index: 200;
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: 3rem;
+        font-family: 'Playfair Display';
+    }
+}
+
+.AllStaff {
+    display: flex;
+    justify-content: space-evenly;
+}

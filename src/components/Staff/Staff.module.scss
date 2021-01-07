@@ -2,7 +2,7 @@
     min-height: 100vh;
     max-height: 100%;
     position: relative;
-    
+
 }
 
 .CrossVertical {
@@ -13,6 +13,28 @@
     left: 17%;
     bottom: 0;
     z-index: -10;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
+.HorizontalWrapper {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 17%;
+}
+
+.CrossHorizontal {
+    width: 75vw;
+    background-color: #005826;
+    height: 20px;
+    // position: absolute;
+    z-index: 0;
 
     @media (max-width: 900px) {
         display: none;

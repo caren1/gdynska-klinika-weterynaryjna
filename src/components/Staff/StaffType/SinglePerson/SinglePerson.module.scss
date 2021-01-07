@@ -1,0 +1,39 @@
+.SinglePersonWrapper {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 1px;
+    
+}
+
+.SinglePerson {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    max-height: 50px;
+    text-align: center;
+    z-index: 200;
+    
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        font-family: 'Lato';
+    }
+}
+
+.AvatarWrapper {
+    border-radius: 50px;
+    border: 5px solid white;
+    padding: 2rem;
+    
+   
+}

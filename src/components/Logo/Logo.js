@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 import logoStyles from "./Logo.module.scss";
 import mainLogo from "../../assets/logos/GKW-main-vertical-logo.svg";
 import secondaryLogo from "../../assets/logos/GKW-horizontal-greypaw-whitecross.svg";
 import mobileLogo from "../../assets/logos/GKW-main-horizontal.svg";
 
 const Logo = (props) => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 744);
+
+  const [isDesktop, setDesktop] = useState(true);
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 744);
@@ -27,13 +29,20 @@ const Logo = (props) => {
   if (props.secondary) {
     logoViewport = secondaryLogo;
   } else if (props.horizontal) {
-    logoViewport = mobileLogo
+    logoViewport = mobileLogo;
   }
 
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
+
   return (
-    <div className={logoStyles.Logo}>
-      <img src={logoViewport} alt="GKW - Gdyńska Klinika weterynarii logo" />
-    </div>
+    <Link to={`/#intro`}>
+      <div className={logoStyles.Logo}>
+        <img src={logoViewport} alt="GKW - Gdyńska Klinika weterynarii logo" />
+      </div>
+    </Link>
   );
 };
 

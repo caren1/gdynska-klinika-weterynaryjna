@@ -7,13 +7,17 @@ import DrawerToggle from "../Sidedrawer/DrawerToggle/DrawerToggle";
 import Button from "../../UI/Button/Button";
 
 const Toolbar = (props) => {
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]');
+  }
+
   const [scrollState, setScrollState] = useState(false);
 
   const navRef = useRef();
   navRef.current = scrollState;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 50;
+      const show = window.scrollY > 50; 
       if (navRef.current !== show) {
         setScrollState(show);
       }
@@ -54,9 +58,7 @@ const Toolbar = (props) => {
     toolbar = (
       <header id="header" className={toolbarStyles.Toolbar}>
         <Logo />
-
         <DrawerToggle clicked={props.drawerToggleClicked} />
-
         <nav className={toolbarStyles.DesktopOnly}>
           <NavigationItems />
           <hr />

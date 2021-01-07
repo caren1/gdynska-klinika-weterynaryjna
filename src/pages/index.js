@@ -13,6 +13,7 @@ import Offer from '../components/Offer/Offer'
 import About from "../components/About/About"
 import Staff from '../components/Staff/Staff'
 import Footer from '../components/Footer/Footer'
+import Partners from "../components/Partners/Partners"
 
 // ENTRY (logo i tytuł ; cała strona)
 // NAVBAR - pierwsza strona Oferta, Klinika, Blog, Kadra, Profilaktyka, Kontakt ; mobilne menu te same linki tylko że na modalu
@@ -30,6 +31,7 @@ const IndexPage = () => {
       <Offer />
       <About />
       <Staff />
+      <Partners />
       <Footer />
     </Layout>
   )

@@ -6,6 +6,8 @@ import Klinika from "../../assets/icons/klinika.svg";
 import Telefon from "../../assets/icons/telefon.svg";
 import Weterynarz from "../../assets/icons/weterynarz.svg";
 
+// import Partnerzy from '../../assets/images/partners.png'
+
 
 const Contact = (props) => {
 
@@ -21,7 +23,7 @@ const Contact = (props) => {
       <div className={contactStyles.RawContactInfo}>
         <ul className={contactStyles.RawContactList}>
           <li className={contactStyles.RawListItem}>
-            <div>
+            <div className={contactStyles.RawListParagraphWrapper}>
               <p className={contactStyles.RawListParagraph}>
                 Poniedziałek - Piątek : 7 - 22
               </p>
@@ -30,19 +32,19 @@ const Contact = (props) => {
             </div>
           </li>
           <li className={contactStyles.RawListItem}>
-            <div>
+            <div className={contactStyles.RawListParagraphWrapper}>
               <p className={contactStyles.RawListParagraph}>Kielecka 22</p>
               <p className={contactStyles.ListParagraph}>81-303, Gdynia</p>
             </div>
           </li>
           <li className={contactStyles.RawListItem}>
-            <div>
+            <div className={contactStyles.RawListParagraphWrapper}>
               <p className={contactStyles.RawListParagraph}>+48 58 620-55-55</p>
               <p className={contactStyles.RawListParagraph}>+48 508-072-234</p>
             </div>
           </li>
           <li className={contactStyles.RawListItem}>
-            <div>
+            <div className={contactStyles.RawListParagraphWrapper}>
               <p className={contactStyles.RawListParagraph}>klinikagdynia@wp.pl</p>
               <p className={contactStyles.RawListParagraph}>gkwbiuro@gmail.com</p>
             </div>
@@ -101,6 +103,9 @@ const Contact = (props) => {
             </div>
           </li>
         </ul>
+        {/* <div className={contactStyles.PartnersWrapper}>
+          <img src={Partnerzy} alt="parnerzy-image" className={contactStyles.Partners}/>
+        </div> */}
       </div>
     </div>
     )
