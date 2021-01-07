@@ -4,13 +4,18 @@ import navigationItemsStyles from "./NavigationItems.module.scss";
 import NavigationItem from "./NavigationItem/NavigationItem";
 
 const NavigationItems = (props) => {
+
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <ul className={navigationItemsStyles.NavigationItems}>
-      <NavigationItem>Oferta</NavigationItem>
-      <NavigationItem>Klinika</NavigationItem>
-      <NavigationItem>Blog</NavigationItem>
-      <NavigationItem>Kadra</NavigationItem>
-      <NavigationItem>Kontakt</NavigationItem>
+      <NavigationItem section="oferta">Oferta</NavigationItem>
+      <NavigationItem section="klinika">Klinika</NavigationItem>
+      <NavigationItem section="klinika">Blog</NavigationItem>
+      <NavigationItem section="kadra">Kadra</NavigationItem>
+      <NavigationItem section="footer">Kontakt</NavigationItem>
     </ul>
   );
 };

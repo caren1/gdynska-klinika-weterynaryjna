@@ -30,7 +30,7 @@ const Offer = () => {
   const offers = edges;
 
   return (
-    <section id="offer" className={offerStyles.Offer}>
+    <section id="oferta" className={offerStyles.Offer}>
       <div className={offerStyles.OfferWrapper}>
         {offers.map(({ node }) => (
           <SingleOffer

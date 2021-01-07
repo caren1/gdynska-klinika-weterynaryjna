@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from 'gatsby'
+
 import navigationItemStyles from "./NavigationItem.module.scss";
 
 const NavigationItem = (props) => {
   return (
     <li className={navigationItemStyles.NavigationItem}>
-      <a href="#">{props.children}</a>
+      <Link href={`/#${props.section}`}>{props.children}</Link>
     </li>
   );
 };

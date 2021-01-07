@@ -29,7 +29,7 @@ const Staff = () => {
   );
 
   return (
-    <section id="staff" className={staffStyles.Staff}>
+    <section id="kadra" className={staffStyles.Staff}>
             <div className={staffStyles.CrossVertical}>
 
             </div>
