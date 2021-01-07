@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from "gatsby";
 
 import staffStyles from "./Staff.module.scss";
@@ -30,17 +31,17 @@ const Staff = () => {
     `
   );
 
-      const docs = allMarkdownRemark.edges.filter((edge) =>
-      edge.node.frontmatter.slug.includes("/lekarze")
-    );
+  const docs = allMarkdownRemark.edges.filter((edge) =>
+    edge.node.frontmatter.slug.includes("/lekarze")
+  );
 
-    const admins = allMarkdownRemark.edges.filter((edge) =>
-      edge.node.frontmatter.slug.includes("/administracja")
-    );
+  const admins = allMarkdownRemark.edges.filter((edge) =>
+    edge.node.frontmatter.slug.includes("/administracja")
+  );
 
-    const technicians = allMarkdownRemark.edges.filter((edge) =>
-      edge.node.frontmatter.slug.includes("/technicy")
-    );
+  const technicians = allMarkdownRemark.edges.filter((edge) =>
+    edge.node.frontmatter.slug.includes("/technicy")
+  );
 
   console.log(allMarkdownRemark);
 
@@ -57,6 +58,29 @@ const Staff = () => {
         <div className={staffStyles.CrossHorizontal}>
           <StaffType title="Administracja" staff={admins} />
         </div>
+      </div>
+
+      <div class={staffStyles.MobileStaff}>
+        <Link to="/lekarze" className="IndividualStaff">
+          <div>
+            <h1>Nasi lekarze</h1>
+            <p>więcej</p>
+          </div>
+        </Link>
+
+        <Link to="/technicy" className="IndividualStaff">
+          <div class="IndividualStaff">
+            <h1>Technicy</h1>
+            <p>więcej</p>
+          </div>
+        </Link>
+
+        <Link to="/administracja" className="IndividualStaff">
+          <div class="IndividualStaff">
+            <h1>Administracja</h1>
+            <p>więcej</p>
+          </div>
+        </Link>
       </div>
     </section>
   );

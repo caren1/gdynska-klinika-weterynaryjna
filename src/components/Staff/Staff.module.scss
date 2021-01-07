@@ -27,6 +27,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     left: 17%;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
 }
 
 .CrossHorizontal {
@@ -38,5 +42,20 @@
 
     @media (max-width: 900px) {
         display: none;
+    }
+}
+
+.IndividualStaff {
+
+
+    text-decoration: none;
+
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
     }
 }
