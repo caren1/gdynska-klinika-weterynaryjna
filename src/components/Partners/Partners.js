@@ -9,6 +9,13 @@ import vetiratylogo from "../../assets/logos/vetiraty.png";
 const Partners = () => {
   return (
     <section id="partnerzy" className={partnersStyles.Partners}>
+      <h1 className={partnersStyles.PartnersHeading}>Partnerzy</h1>
+      {/* <h2>
+        Zapraszamy Państwa również do zapoznania się z ofertą naszych partnerów.
+        Polskiego programu weterynaryjnego, którego współzałożycielem jest
+        Tomasz Brzeski oraz innowacyjnych rozwiązań weterynaryjnych takich jak
+        Veticover i Vetiraty.
+      </h2> */}
       <SinglePartner
         image={ppwlogo}
         title="Polski Program Weterynaryjny"
@@ -16,7 +23,7 @@ const Partners = () => {
         paragraph="Pojedynczej praktyce weterynaryjnej skupionej na realizacji swojej podstawowej funkcji usługowej coraz trudniej organizacyjnie i finansowo sprostać wzorcom na miarę oczekiwań klientów, identyfikacji niezbędnych zmian, myślenia strategicznego oraz odpowiedniej komunikacji w mediach społecznościowych. PPW przyświeca idea zgodnie, z którą stworzenie organizacji zrzeszającej wiele podmiotów w ramach zintegrowanej struktury, otwiera możliwość zastosowania rozwiązań, które jak dotąd nie występują na rynku usług weterynaryjnych w Polsce."
         link="https://www.ppwet.pl/"
         linktext="więcej"
-        style={{ margin: '100px 0 0 0'}}
+        style={{ margin: "100px 0 0 0" }}
       />
       <SinglePartner
         image={veticoverlogo}

@@ -30,7 +30,7 @@
     top: 0;
     flex-direction: column;
     justify-content: space-evenly;
-    left: 17%;
+    left: 20%;
 
     @media (max-width: 900px) {
         display: none;
@@ -38,9 +38,9 @@
 }
 
 .CrossHorizontal {
-    width: 75vw;
+    width: 70vw;
     background-color: #005826;
-    height: 20px;
+    height: 10px;
     // position: absolute;
     z-index: 0;
 
