@@ -10,3 +10,20 @@
 *::-webkit-scrollbar {
     display: none;
 }
+
+html {
+    scroll-snap-type: y proximity;
+}
+
+section {
+    scroll-snap-align: center;
+}
+
+
+#kadra {
+    scroll-snap-align: start;
+}
+
+footer {
+    scroll-snap-align: center;
+}

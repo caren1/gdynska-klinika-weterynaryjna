@@ -27,7 +27,7 @@ const About = () => {
           blogtext="zobacz blog"
           link="#"
         />
-        <div className={aboutStyles.CrossHorizontalOverCat}></div>
+        <div id="kadra"  className={aboutStyles.CrossHorizontalOverCat}></div>
       </div>
     </section>
   );

@@ -46,7 +46,7 @@ const Staff = () => {
   console.log(allMarkdownRemark);
 
   return (
-    <section id="kadra" className={staffStyles.Staff}>
+    <section className={staffStyles.Staff}>
       <div className={staffStyles.CrossVertical}></div>
       <div className={staffStyles.HorizontalWrapper}>
         <div className={staffStyles.CrossHorizontal}>

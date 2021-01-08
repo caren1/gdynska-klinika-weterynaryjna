@@ -6,7 +6,7 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const NavigationItems = (props) => {
 
   if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]')
+    require("smooth-scroll")('a[to*="#"]')
   }
 
   return (
@@ -15,6 +15,7 @@ const NavigationItems = (props) => {
       <NavigationItem section="klinika">Klinika</NavigationItem>
       <NavigationItem section="klinika">Blog</NavigationItem>
       <NavigationItem section="kadra">Kadra</NavigationItem>
+      <NavigationItem section="partnerzy">Partnerzy</NavigationItem>
       <NavigationItem section="footer">Kontakt</NavigationItem>
     </ul>
   );

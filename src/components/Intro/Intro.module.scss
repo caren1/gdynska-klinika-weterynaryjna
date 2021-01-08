@@ -9,6 +9,8 @@
     background-attachment: fixed;
     padding: 1rem;
     position: relative;
+    scroll-snap-align: start;
+
 
     @media (max-width: 765px) {
         background-position: center;
