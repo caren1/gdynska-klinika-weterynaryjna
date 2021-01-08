@@ -1,7 +1,7 @@
 import React from "react";
 import blogStyles from "./Blog.module.scss";
 
-const Blog = ({ image, alt, title, paragraph, blogtext }) => {
+const Blog = ({ image, alt, title, paragraph, blogtext, link }) => {
   return (
     <div className={blogStyles.Blog}>
       <div className={blogStyles.ImageContainer}>
@@ -10,7 +10,7 @@ const Blog = ({ image, alt, title, paragraph, blogtext }) => {
       <div className={blogStyles.InfoContainer}>
         <h1>{title}</h1>
         <p>{paragraph}</p>
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href={link} target="_blank" rel="noreferrer">
           {blogtext}
         </a>
       </div>

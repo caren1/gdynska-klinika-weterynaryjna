@@ -61,21 +61,21 @@ const Staff = () => {
       </div>
 
       <div class={staffStyles.MobileStaff}>
-        <Link to="/lekarze" className="IndividualStaff">
+        <Link to="/lekarze" className={staffStyles.StaffGroup}>
           <div>
             <h1>Nasi lekarze</h1>
             <p>więcej</p>
           </div>
         </Link>
 
-        <Link to="/technicy" className="IndividualStaff">
+        <Link to="/technicy" className={staffStyles.StaffGroup}>
           <div class="IndividualStaff">
             <h1>Technicy</h1>
             <p>więcej</p>
           </div>
         </Link>
 
-        <Link to="/administracja" className="IndividualStaff">
+        <Link to="/administracja" className={staffStyles.StaffGroup}>
           <div class="IndividualStaff">
             <h1>Administracja</h1>
             <p>więcej</p>
