@@ -6,7 +6,7 @@ const DrawerToggle = (props) => {
   let inlineStyle = props.secondary ? { backgroundColor: "white" } : null;
 
   return (
-    <div className={drawerStyles.DrawerToggle} onClick={props.clicked}>
+    <div className={drawerStyles.DrawerToggle} onClick={props.clicked} role="menu">
       <div style={inlineStyle}></div>
       <div style={inlineStyle}></div>
       <div style={inlineStyle}></div>

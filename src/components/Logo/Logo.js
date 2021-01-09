@@ -10,7 +10,7 @@ const Logo = (props) => {
   const [isDesktop, setDesktop] = useState(true);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 744);
+    setDesktop(window.innerWidth > 842);
   };
 
   useEffect(() => {

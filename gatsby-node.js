@@ -37,8 +37,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   response.data.allMarkdownRemark.edges.forEach(({ node }) => {
     let template = null;
-    console.log(node.frontmatter.slug)
-    console.log(typeof(node.frontmatter.slug));
+    // console.log(node.frontmatter.slug)
+    // console.log(typeof(node.frontmatter.slug));
 
     if (node.frontmatter.slug.includes("oferta")) {
       template = offerTemplate;

@@ -50,7 +50,7 @@ const Toolbar = (props) => {
             </li>
           </ul>
           <Button type="NavCall" />
-          <DrawerToggle clicked={props.drawerToggleClicked} />
+          {/* <DrawerToggle clicked={props.drawerToggleClicked} /> */}
         </nav>
       </header>
     );
