@@ -11,6 +11,10 @@
     display: none;
 }
 
+body {
+    overflow: hidden;
+  }
+
 html {
     scroll-snap-type: y proximity;
 }

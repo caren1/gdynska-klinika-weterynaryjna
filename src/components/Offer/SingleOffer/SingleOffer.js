@@ -17,4 +17,4 @@ const SingleOffer = ({ title, icon, slug }) => {
   );
 };
 
-export default SingleOffer;
+export default React.memo(SingleOffer);

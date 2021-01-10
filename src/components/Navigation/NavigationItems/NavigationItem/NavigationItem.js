@@ -1,12 +1,19 @@
 import React from "react";
-import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 import navigationItemStyles from "./NavigationItem.module.scss";
 
 const NavigationItem = (props) => {
   return (
     <li className={navigationItemStyles.NavigationItem}>
-      <Link to={`/#${props.section}`}>{props.children}</Link>
+      <a
+        onClick={(event) => {
+          event.preventDefault();
+          scrollTo(`#${props.section}`);
+        }}
+      >
+        {props.children}
+      </a>
     </li>
   );
 };

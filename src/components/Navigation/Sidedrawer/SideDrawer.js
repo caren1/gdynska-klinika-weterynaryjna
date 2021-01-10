@@ -21,7 +21,7 @@ const sideDrawer = (props) => {
         onClick={props.closed}
       >
         <nav>
-          <a href="#" className={sideDrawerStyles.Exit} />
+          <span className={sideDrawerStyles.Exit} onClick={props.closed}/>
           <NavigationItems />
         </nav>
       </div>

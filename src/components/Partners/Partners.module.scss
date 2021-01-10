@@ -8,6 +8,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('../../assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
 
     @media (max-width: 745px) {
         padding: 1rem 0;
