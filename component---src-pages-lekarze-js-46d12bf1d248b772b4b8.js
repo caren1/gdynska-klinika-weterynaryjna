@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{CAE5:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),a=t.n(u);e.default=function(){return a.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-lekarze-js-46d12bf1d248b772b4b8.js.map
