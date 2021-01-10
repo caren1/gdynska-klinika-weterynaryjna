@@ -15,7 +15,7 @@ const Person = ({ data }) => {
   };
 
   return (
-    <Layout detailed={true}>
+    <Layout detailed={true} >
       <i className={personStyles.BackArrow} onClick={() => window.history.back()}></i>
       
       <div className={personStyles.Person}>

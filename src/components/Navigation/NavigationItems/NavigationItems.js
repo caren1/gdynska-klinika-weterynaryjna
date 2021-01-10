@@ -3,7 +3,7 @@ import navigationItemsStyles from "./NavigationItems.module.scss";
 
 import NavigationItem from "./NavigationItem/NavigationItem";
 
-const NavigationItems = (props) => {
+const NavigationItems = () => {
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[to*="#"]');
   }

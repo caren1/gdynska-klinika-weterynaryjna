@@ -20,6 +20,7 @@ const Logo = (props) => {
   });
 
   let logoViewport = null;
+  let isSecondary = false;
 
   if (isDesktop) {
     logoViewport = mainLogo;
@@ -33,7 +34,14 @@ const Logo = (props) => {
     logoViewport = mobileLogo;
   }
 
-  return (
+  if (
+    window.location.href.includes("/oferta") ||
+    window.location.href.includes("-")
+  ) {
+    isSecondary = true;
+  }
+
+  let logo = (
     <div
       className={logoStyles.Logo}
       onClick={() => {
@@ -43,6 +51,23 @@ const Logo = (props) => {
       <img src={logoViewport} alt="GKW - Gdyńska Klinika weterynarii logo" />
     </div>
   );
+
+  if (isSecondary) {
+    logo = (
+      <div
+        className={logoStyles.Logo}
+        onClick={(event) => {
+          event.preventDefault();
+          window.history.back();
+          scrollTo(`#intro`);
+        }}
+      >
+        <img src={logoViewport} alt="GKW - Gdyńska Klinika weterynarii logo" />
+      </div>
+    );
+  }
+
+  return (logo);
 };
 
 export default React.memo(Logo);

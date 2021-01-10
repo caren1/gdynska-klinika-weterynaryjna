@@ -1,30 +1,45 @@
 import React from "react";
-import { navigate } from 'gatsby'
+import { navigate } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 import navigationItemStyles from "./NavigationItem.module.scss";
 
 const NavigationItem = (props) => {
-  return (
-    <li className={navigationItemStyles.NavigationItem}>
+  let isSecondary = false;
+  let linkItem = null;
+
+  if ( window.location.href.includes("/oferta") || window.location.href.includes("-")) {
+    isSecondary = true;
+  }
+
+  if (isSecondary) {
+    linkItem = (
       <a
-        // to={`/#${props.section}`}
         onClick={(event) => {
-          event.preventDefault()
-          // navigate(
-          //   `/#${props.section}`,
-          //   { replace: true }
-          // )
+          event.preventDefault();
           window.history.back();
           setTimeout(() => {
             scrollTo(`#${props.section}`);
-          }, 1000);
+          }, 500);
         }}
       >
         {props.children}
       </a>
-    </li>
-  );
+    );
+  } else {
+    linkItem = (
+      <a
+        onClick={(event) => {
+          event.preventDefault();
+          scrollTo(`#${props.section}`);
+        }}
+      >
+        {props.children}
+      </a>
+    );
+  }
+
+  return <li className={navigationItemStyles.NavigationItem}>{linkItem}</li>;
 };
 
 export default NavigationItem;

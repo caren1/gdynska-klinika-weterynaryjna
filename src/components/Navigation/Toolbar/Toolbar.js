@@ -17,7 +17,7 @@ const Toolbar = (props) => {
   navRef.current = scrollState;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 50; 
+      const show = window.scrollY > 50;
       if (navRef.current !== show) {
         setScrollState(show);
       }
