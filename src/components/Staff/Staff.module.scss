@@ -3,7 +3,7 @@
     max-height: 100%;
     position: relative;
 
-    @media (max-width: 900px){
+    @media (max-width: 900px) {
         min-height: 100%;
     }
 
@@ -71,8 +71,8 @@
     .StaffGroup {
         text-decoration: none;
         color: black;
-    
-    
+
+
         div {
             display: flex;
             flex-direction: column;

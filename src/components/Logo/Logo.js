@@ -6,11 +6,10 @@ import secondaryLogo from "../../assets/logos/GKW-horizontal-greypaw-whitecross.
 import mobileLogo from "../../assets/logos/GKW-main-horizontal.svg";
 
 const Logo = (props) => {
-
   const [isDesktop, setDesktop] = useState(true);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 842);
+    setDesktop(window.innerWidth > 845);
   };
 
   useEffect(() => {
@@ -33,9 +32,8 @@ const Logo = (props) => {
   }
 
   if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]')
+    require("smooth-scroll")('a[href*="#"]');
   }
-
 
   return (
     <Link to={`/#intro`}>

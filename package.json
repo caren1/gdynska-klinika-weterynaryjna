@@ -14,7 +14,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
 
   },
   "license": "0BSD",

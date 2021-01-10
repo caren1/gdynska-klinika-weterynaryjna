@@ -1,8 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-// console.log('############ DZIAŁA');
-
 const Person = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;

@@ -4,27 +4,23 @@ import footerStyles from "./Footer.module.scss";
 import Contact from "../Contact/Contact";
 import Button from "../UI/Button/Button";
 
-import footerLogo from '../../assets/logos/GKW-main-logo.svg'
-
+import footerLogo from "../../assets/logos/GKW-main-logo.svg";
 
 const Footer = () => {
-
-
-    // useEffect(() => {
-    //     const gdyniaGKW = { lat: 54.508515246668836, lng: 18.530186576907568 }
-    //     const map = new google.maps.Map(document.getElementById('map'), {
-    //         zoom: 3,
-    //         center: gdyniaGKW
-    //     })
-    // }, [])
-
+  // useEffect(() => {
+  //     const gdyniaGKW = { lat: 54.508515246668836, lng: 18.530186576907568 }
+  //     const map = new google.maps.Map(document.getElementById('map'), {
+  //         zoom: 3,
+  //         center: gdyniaGKW
+  //     })
+  // }, [])
 
   return (
     <footer id="footer" className={footerStyles.Footer}>
       <div className={footerStyles.ContactSection}>
-          <div className={footerStyles.ImageWrapper}>
-             <img src={footerLogo} alt="GKW-footer-logo" />
-          </div>
+        <div className={footerStyles.ImageWrapper}>
+          <img src={footerLogo} alt="GKW-footer-logo" />
+        </div>
         <Contact raw={true} horizontal={true} />
       </div>
       <div className={footerStyles.InfoSection}>

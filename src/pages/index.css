@@ -26,4 +26,12 @@ section {
 
 footer {
     scroll-snap-align: center;
+    
 }
+
+@media (max-width: 745px) {
+ section, #kadra, footer {
+     scroll-snap-align: start !important;
+ }   
+}
+

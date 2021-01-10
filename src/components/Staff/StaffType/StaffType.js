@@ -4,7 +4,6 @@ import SinglePerson from './SinglePerson/SinglePerson'
 
 const StaffType = (props) => {
 
-    console.log('kiekie', props.staff);
 
     return (
         <div className={staffTypeStyles.StaffType}>

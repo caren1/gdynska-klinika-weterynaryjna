@@ -104,3 +104,46 @@
         }
     }
 }
+
+.Exit {
+    position: absolute;
+    right: 32px;
+    top: 130px;
+    width: 45px;
+    height: 45px;
+    opacity: 0.3;
+
+    @media (max-width: 745px) {
+        width: 22px;
+        height: 22px;
+        right: 25px;
+    }
+  }
+  
+  .Exit:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in
+  }
+  
+  .Exit:before,
+  .Exit:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 45px;
+    width: 4px;
+    background-color: #005826;
+
+    @media (max-width: 745px) {
+        height: 25px;
+        width: 3px;
+    }
+  }
+  
+  .Exit:before {
+    transform: rotate(45deg);
+  }
+  
+  .Exit:after {
+    transform: rotate(-45deg);
+  }

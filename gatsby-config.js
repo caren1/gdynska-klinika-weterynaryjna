@@ -18,6 +18,13 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `static`,
+        path: `${__dirname}/src/static`,
+      },
+    },
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
