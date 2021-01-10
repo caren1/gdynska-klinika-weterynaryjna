@@ -15,12 +15,12 @@ html {
     scroll-snap-type: y proximity;
 }
 
-section {
+section, #partnerzy {
     scroll-snap-align: center;
 }
 
 
-#kadra {
+#kadra{
     scroll-snap-align: start;
 }
 

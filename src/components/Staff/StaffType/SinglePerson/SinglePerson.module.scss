@@ -21,7 +21,8 @@
 
     &:hover {
         transform: scale(1.1);
-        transition: all 0.2s ease-in;
+        transition: all 0.1s ease-in;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     h3 {
@@ -32,8 +33,6 @@
 
 .AvatarWrapper {
     border-radius: 50px;
-    border: 2px solid white;
+    border: 3px solid white;
     padding: 2rem;
-
-
 }

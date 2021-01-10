@@ -1,5 +1,5 @@
 .SinglePartner {
-    padding: 0 3rem;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -35,16 +35,41 @@
         max-width: 100%;
     }
 
-    h1 {
-        color: black;
-        font-family: 'Playfair Display';
-        font-size: 2rem;
-        margin-bottom: 10px;
+    .HeadingContainer {
 
-        @media (max-width: 1060px) {
-            display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: black;
+            font-family: 'Playfair Display';
+            font-size: 2rem;
+            margin-bottom: 10px;
+            margin-right: 10px;
+
+            @media (max-width: 1060px) {
+                display: none;
+            }
         }
+
+        hr {
+            flex: 1 1 auto;
+            border: 2px solid #005826;
+
+            @media (max-width: 1060px) {
+                margin: 20px 10px;
+            }
+
+            @media (max-width: 500px) {
+                margin: 10px 10px;
+            }
+
+            
+        }
+
     }
+
 
     p {
         color: black;

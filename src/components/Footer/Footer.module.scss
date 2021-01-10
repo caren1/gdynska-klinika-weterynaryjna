@@ -10,9 +10,9 @@
     @media (max-width: 745px) {
         flex-direction: column;
         justify-content: flex-start;
-
+        
     }
-
+    
 }
 
 .ContactSection {
@@ -57,7 +57,7 @@
     @media (max-width: 745px) {
         max-width: 100%;
         margin: 0;
-
+        
     }
 
     h1 {
@@ -70,25 +70,33 @@
         font-family: 'Lato';
     }
 
-    >* {
+    > * {
         margin: 2rem 0;
     }
 
     .MapContainer {
         max-width: 80%;
         // background-color: black;
-        height: 20%;
-        min-height: 200px;
+        height: 180px;
+        // min-height: 200px;
+        
         margin: 0 auto;
         border-radius: 5px;
         border: 1px solid rgba(0, 88, 38, 1);
 
+        @media (max-width: 945px) {
+            height: 110px;
+            
+        }
+
         @media (max-width: 745px) {
             max-width: 100%;
             min-height: 100px;
-
+            
         }
     }
 }
 
-.Buttons {}
+.Buttons {
+
+}

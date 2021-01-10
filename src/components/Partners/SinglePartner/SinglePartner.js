@@ -8,7 +8,10 @@ const SinglePartner = ({ image, title, paragraph, alt, link, linktext }) => {
         <img src={image} alt={alt} />
       </div>
       <div className={singlePartnerStyles.InfoContainer}>
+        <div className={singlePartnerStyles.HeadingContainer}>
         <h1>{title}</h1>
+        <hr />
+        </div>
         <p>{paragraph}</p>
         <a href={link} target="_blank" rel="noreferrer">
           {linktext}

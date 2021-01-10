@@ -43,8 +43,6 @@ const Staff = () => {
     edge.node.frontmatter.slug.includes("/technicy")
   );
 
-  console.log(allMarkdownRemark);
-
   return (
     <section className={staffStyles.Staff}>
       <div className={staffStyles.CrossVertical}></div>
@@ -60,7 +58,7 @@ const Staff = () => {
         </div>
       </div>
 
-      <div class={staffStyles.MobileStaff}>
+      <div className={staffStyles.MobileStaff}>
         <Link to="/lekarze" className={staffStyles.StaffGroup}>
           <div>
             <h1>Nasi lekarze</h1>
@@ -69,14 +67,14 @@ const Staff = () => {
         </Link>
 
         <Link to="/technicy" className={staffStyles.StaffGroup}>
-          <div class="IndividualStaff">
+          <div className="IndividualStaff">
             <h1>Technicy</h1>
             <p>więcej</p>
           </div>
         </Link>
 
         <Link to="/administracja" className={staffStyles.StaffGroup}>
-          <div class="IndividualStaff">
+          <div className="IndividualStaff">
             <h1>Administracja</h1>
             <p>więcej</p>
           </div>
