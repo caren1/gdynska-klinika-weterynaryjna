@@ -13,21 +13,27 @@ const Person = ({ data }) => {
     backgroundImage: `url("${frontmatter.image}")`,
     backgroundSize: "cover",
   };
-  console.log(markdownRemark);
 
   return (
     <Layout detailed={true}>
+      <i className={personStyles.BackArrow} onClick={() => window.history.back()}></i>
       
       <div className={personStyles.Person}>
         <div
           className={personStyles.AvatarWrapper}
-          style={backgroundProperties}
-        ></div>
+          style={backgroundProperties}>
+        </div>
+
         <div className={personStyles.PersonInfo}>
           <h1 className={personStyles.PersonHeading}>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }}></div>
         </div>
+
         <div className={personStyles.CrossHorizontal}></div>
+        <div className={personStyles.CrossVertical}></div>
+
+        
+        
       </div>
     </Layout>
   );
