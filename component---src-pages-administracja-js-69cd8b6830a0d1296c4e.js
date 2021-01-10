@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{CXH0:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),a=t.n(u);e.default=function(){return a.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-administracja-js-69cd8b6830a0d1296c4e.js.map
