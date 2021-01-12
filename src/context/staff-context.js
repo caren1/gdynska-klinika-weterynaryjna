@@ -50,8 +50,8 @@ const StaffContextProvider = (props) => {
   // setTechnicians(techniciansMarkdown);
 
   const doctors = doctorsMarkdown;
-  const technicians  = adminsMarkdown;
-  const administration = techniciansMarkdown;
+  const technicians  = techniciansMarkdown;
+  const administration = adminsMarkdown;
 
   return (
     <StaffContext.Provider

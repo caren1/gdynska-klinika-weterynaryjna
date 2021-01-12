@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import doctorsStyles from "./lekarze.module.scss";
+import personStyles from "./person.module.scss";
 
 import Layout from "../components/Layout/Layout";
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
@@ -28,13 +28,15 @@ const Lekarze = ({ data }) => {
   const doctorsMarkdown = allMarkdownRemark.edges.filter((edge) =>
     edge.node.frontmatter.slug.includes("/lekarze")
   );
-  // console.log('####################', doctorsMarkdown);
 
   return (
     <Layout>
-      <div className={doctorsStyles.DoctorsPage}>
-      <i className={doctorsStyles.BackArrow} onClick={() => window.history.back()}></i>
-        <div className={doctorsStyles.DoctorsWrapper}>
+      <div className={personStyles.DoctorsPage}>
+        <i
+          className={personStyles.BackArrow}
+          onClick={() => window.history.back()}
+        ></i>
+        <div className={personStyles.DoctorsWrapper}>
           {doctorsMarkdown.map(({ node }) => (
             <SinglePerson
               separate={true}
@@ -50,4 +52,4 @@ const Lekarze = ({ data }) => {
   );
 };
 
-export default Lekarze;
+export default React.memo(Lekarze);
