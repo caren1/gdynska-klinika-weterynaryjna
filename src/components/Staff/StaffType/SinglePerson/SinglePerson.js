@@ -8,8 +8,11 @@ const SinglePerson = (props) => {
     backgroundSize: "cover",
   };
 
-  return (
-    <Link to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
+  
+  let singlePerson;
+  if (!props.separate) {
+    singlePerson = (
+      <Link to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
       <div className={singlePersonStyles.SinglePerson}>
         <div
           className={singlePersonStyles.AvatarWrapper}
@@ -18,7 +21,24 @@ const SinglePerson = (props) => {
         <h3>{props.name}</h3>
       </div>
     </Link>
-  );
+    )
+  } else {
+    singlePerson = (
+      <Link to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
+      <div className={singlePersonStyles.SinglePersonSeparate}>
+        <div
+          className={singlePersonStyles.AvatarWrapperSeparate}
+          style={backgroundProperties}
+        ></div>
+        <h3>{props.name}</h3>
+      </div>
+    </Link>
+    )
+  }
+
+  return (
+    singlePerson
+  )
 };
 
 export default SinglePerson;

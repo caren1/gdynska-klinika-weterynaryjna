@@ -1,5 +1,4 @@
 import React from "react";
-import { navigate } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 import navigationItemStyles from "./NavigationItem.module.scss";
@@ -8,7 +7,11 @@ const NavigationItem = (props) => {
   let isSecondary = false;
   let linkItem = null;
 
-  if ( window.location.href.includes("/oferta") || window.location.href.includes("-")) {
+  if (
+    window.location.href.includes("/oferta") ||
+    window.location.href.includes("-") || window.location.href.includes("/lekarze")
+    || window.location.href.includes("/tech") || window.location.href.includes("/admin")
+  ) {
     isSecondary = true;
   }
 
@@ -39,7 +42,7 @@ const NavigationItem = (props) => {
     );
   }
 
-  return <li className={navigationItemStyles.NavigationItem}>{linkItem}</li>;
+  return (<li className={navigationItemStyles.NavigationItem}>{linkItem}</li>);
 };
 
 export default NavigationItem;

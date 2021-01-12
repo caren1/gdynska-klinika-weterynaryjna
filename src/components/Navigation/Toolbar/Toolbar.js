@@ -7,9 +7,6 @@ import DrawerToggle from "../Sidedrawer/DrawerToggle/DrawerToggle";
 import Button from "../../UI/Button/Button";
 
 const Toolbar = (props) => {
-  if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]');
-  }
 
   const [scrollState, setScrollState] = useState(false);
 

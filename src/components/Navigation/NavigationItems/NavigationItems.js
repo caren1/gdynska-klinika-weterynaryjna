@@ -4,9 +4,7 @@ import navigationItemsStyles from "./NavigationItems.module.scss";
 import NavigationItem from "./NavigationItem/NavigationItem";
 
 const NavigationItems = () => {
-  if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[to*="#"]');
-  }
+  
 
   return (
     <ul className={navigationItemsStyles.NavigationItems}>

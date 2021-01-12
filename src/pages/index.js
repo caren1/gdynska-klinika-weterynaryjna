@@ -16,6 +16,8 @@ import Staff from "../components/Staff/Staff";
 import Footer from "../components/Footer/Footer";
 import Partners from "../components/Partners/Partners";
 
+import StaffContextProvider from "../context/staff-context";
+
 // ENTRY (logo i tytuł ; cała strona)
 // NAVBAR - pierwsza strona Oferta, Klinika, Blog, Kadra, Profilaktyka, Kontakt ; mobilne menu te same linki tylko że na modalu
 // INTRO (zdjęcie + opis + godziny otwarcia + zadzwoń)
@@ -31,14 +33,16 @@ const IndexPage = () => {
   }, []);
 
   return (
-    <Layout>
-      <Intro />
-      <Offer />
-      <About />
-      <Staff />
-      <Partners />
-      <Footer />
-    </Layout>
+    <StaffContextProvider>
+      <Layout>
+        <Intro />
+        <Offer />
+        <About />
+        <Staff />
+        <Partners />
+        <Footer />
+      </Layout>
+    </StaffContextProvider>
   );
 };
 
