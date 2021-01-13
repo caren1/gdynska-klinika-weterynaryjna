@@ -66,10 +66,6 @@ const Logo = (props) => {
   //   isSecondary = false;
   // }
 
-  console.log("ttttttttttttt", isSecondary);
-  console.log('href', window.location.href);
-  console.log('href', typeof(window.location.href));
-
   let logo = (
     <div
       className={logoStyles.Logo}

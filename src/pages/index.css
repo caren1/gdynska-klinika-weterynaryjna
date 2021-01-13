@@ -19,12 +19,12 @@ html {
     scroll-snap-type: y proximity;
 }
 
-section {
+section, footer, #partnerzy {
     scroll-snap-align: center;
 }
 
 
-#kadra, #partnerzy{
+#kadra{
     scroll-snap-align: start;
 }
 
@@ -33,9 +33,9 @@ footer {
     
 }
 
-@media (max-width: 745px) {
+/* @media (max-width: 745px) {
  section, #kadra, footer {
-     scroll-snap-align: none !important;
+     scroll-snap-align: start !important;
  }   
-}
+} */
 
