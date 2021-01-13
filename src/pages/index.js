@@ -18,15 +18,6 @@ import Partners from "../components/Partners/Partners";
 
 import StaffContextProvider from "../context/staff-context";
 
-// ENTRY (logo i tytuł ; cała strona)
-// NAVBAR - pierwsza strona Oferta, Klinika, Blog, Kadra, Profilaktyka, Kontakt ; mobilne menu te same linki tylko że na modalu
-// INTRO (zdjęcie + opis + godziny otwarcia + zadzwoń)
-// OFERTA -> Po kliknięciu szczegóły danej kategorii
-// ABOUT (generalne info o klinice, kiedy założona, kto szefo)
-// KADRA -> po kliknięciu szczegóły o danej osobie
-// PARTNERZY (więcej o PPW, więcej o możliwościach VetiCover i VetiRaty)
-// FOOTER(kontakt) - zawsze na widoku (mapka, adres, telefony, maile ; bez formularza)
-
 const IndexPage = () => {
   useEffect(() => {
     document.body.style.overflow = "auto";

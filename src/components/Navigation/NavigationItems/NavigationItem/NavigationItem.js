@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { navigate } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 import navigationItemStyles from "./NavigationItem.module.scss";
 
 const NavigationItem = (props) => {
-  let isSecondary = false;
+  // let isSecondary = false;
+  const [isSecondary, setIsSecondary] = useState(false);
   let linkItem = null;
 
-  if (
-    window.location.href.includes("/oferta") ||
-    window.location.href.includes("-") || window.location.href.includes("/lekarze")
-    || window.location.href.includes("/tech") || window.location.href.includes("/admin")
-  ) {
-    isSecondary = true;
-  }
+  useEffect(() => {
+    if (
+      window.location.href.includes("/oferta") ||
+      window.location.href.includes("-") ||
+      window.location.href.includes("/lekarze") ||
+      window.location.href.includes("/tech") ||
+      window.location.href.includes("/admin")
+    ) {
+      setIsSecondary(true);
+    }
+  }, []);
 
   if (isSecondary) {
     linkItem = (
       <a
         onClick={(event) => {
           event.preventDefault();
-          window.history.back();
+          navigate("/");
           setTimeout(() => {
             scrollTo(`#${props.section}`);
           }, 500);
@@ -42,7 +48,7 @@ const NavigationItem = (props) => {
     );
   }
 
-  return (<li className={navigationItemStyles.NavigationItem}>{linkItem}</li>);
+  return <li className={navigationItemStyles.NavigationItem}>{linkItem}</li>;
 };
 
 export default NavigationItem;

@@ -8,9 +8,24 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Logo = (props) => {
   const [isDesktop, setDesktop] = useState(true);
+  const [isSecondary, setIsSecondary] = useState(false);
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 845);
+  };
+
+  const updateLogo = () => {
+    if (
+      window.location.href.includes("/oferta") |
+      window.location.href.includes("-") |
+      window.location.href.includes("/lekarze") |
+      window.location.href.includes("/tech") |
+      window.location.href.includes("/admin")
+    ) {
+      setIsSecondary(true);
+    } else {
+      setIsSecondary(false);
+    }
   };
 
   useEffect(() => {
@@ -19,8 +34,14 @@ const Logo = (props) => {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
+  useEffect(() => {
+    window.addEventListener("hashchange", updateLogo);
+    return () => {
+      window.removeEventListener("hashchange", updateLogo);
+    };
+  });
+
   let logoViewport = null;
-  let isSecondary = false;
 
   if (isDesktop) {
     logoViewport = mainLogo;
@@ -34,16 +55,20 @@ const Logo = (props) => {
     logoViewport = mobileLogo;
   }
 
-  // const module = typeof window !== (`undefined` && window.location.href.includes("/oferta")) ? isSecondary = true : isSecondary = false;
+  // const module =
 
-  if (
-    window.location.href.includes("/oferta") ||
-    window.location.href.includes("-")
-  ) {
-    isSecondary = true;
-  } else {
-    isSecondary = false;
-  }
+  // if (
+  //   window.location.href.includes("/oferta") ||
+  //   window.location.href.includes("-")
+  // ) {
+  //   isSecondary = true;
+  // } else {
+  //   isSecondary = false;
+  // }
+
+  console.log("ttttttttttttt", isSecondary);
+  console.log('href', window.location.href);
+  console.log('href', typeof(window.location.href));
 
   let logo = (
     <div
@@ -56,7 +81,7 @@ const Logo = (props) => {
     </div>
   );
 
-  if (!module) {
+  if (isSecondary) {
     logo = (
       <div
         className={logoStyles.Logo}

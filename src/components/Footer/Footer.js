@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import footerStyles from "./Footer.module.scss";
 
 import Contact from "../Contact/Contact";
@@ -14,6 +15,23 @@ const Footer = () => {
   //         center: gdyniaGKW
   //     })
   // }, [])
+  const [scrollState, setScrollState] = useState(false);
+
+  const navRef = useRef();
+  navRef.current = scrollState;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 500;
+      if (navRef.current !== show) {
+        setScrollState(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <footer id="footer" className={footerStyles.Footer}>
@@ -38,6 +56,11 @@ const Footer = () => {
           <Button type="Call" secondary={true} />
           <Button type="Route" secondary={true} />
         </div>
+      </div>
+      <div className={footerStyles.BackToTop} style={ scrollState ? {display: 'block'} : {display: 'none'}}>
+        <i className={footerStyles.ArrowTop} onClick={(event) => {
+        event.preventDefault()
+        scrollTo(`#intro`)}}></i>
       </div>
     </footer>
   );

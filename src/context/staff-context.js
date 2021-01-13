@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 export const StaffContext = React.createContext({
@@ -36,21 +36,16 @@ const StaffContextProvider = (props) => {
     edge.node.frontmatter.slug.includes("/lekarze")
   );
 
-  // setDoctors(doctorsMarkdown);
-
   const adminsMarkdown = allMarkdownRemark.edges.filter((edge) =>
     edge.node.frontmatter.slug.includes("/administracja")
   );
-  // setAdministration(adminsMarkdown);
 
   const techniciansMarkdown = allMarkdownRemark.edges.filter((edge) =>
     edge.node.frontmatter.slug.includes("/technicy")
   );
 
-  // setTechnicians(techniciansMarkdown);
-
   const doctors = doctorsMarkdown;
-  const technicians  = techniciansMarkdown;
+  const technicians = techniciansMarkdown;
   const administration = adminsMarkdown;
 
   return (
