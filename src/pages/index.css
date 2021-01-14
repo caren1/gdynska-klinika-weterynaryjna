@@ -13,29 +13,32 @@
 
 body {
     overflow: hidden;
-  }
+}
 
 html {
     scroll-snap-type: y proximity;
 }
 
-section, footer, #partnerzy {
-    scroll-snap-align: center;
+#intro {
+  scroll-snap-align: start;
 }
 
-
-#kadra{
-    scroll-snap-align: start;
+#ofeta {
+  scroll-snap-align: center !important;
 }
 
+#klinika {
+  scroll-snap-align: center;
+}
+
+#kadra {
+  scroll-snap-align: start;
+}
+
+#partnerzy {
+  scroll-snap-align: center;
+}
+ 
 footer {
     scroll-snap-align: center;
-    
 }
-
-/* @media (max-width: 745px) {
- section, #kadra, footer {
-     scroll-snap-align: start !important;
- }   
-} */
-

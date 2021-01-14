@@ -1,8 +1,8 @@
 import React from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 import singlePersonStyles from "./SinglePerson.module.scss";
 
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 
 
@@ -16,7 +16,7 @@ const SinglePerson = (props) => {
   let singlePerson;
   if (!props.separate) {
     singlePerson = (
-      <AniLink paintDrip direction="right" duration={1} hex="#005826" to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
+      <Link to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
       <div className={singlePersonStyles.SinglePerson}>
         <div
           className={singlePersonStyles.AvatarWrapper}
@@ -24,11 +24,11 @@ const SinglePerson = (props) => {
         ></div>
         <h3>{props.name}</h3>
       </div>
-    </AniLink>
+    </Link>
     )
   } else {
     singlePerson = (
-      <AniLink paintDrip direction="right" duration={1} hex="#005826" to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
+      <Link to={props.slug} className={singlePersonStyles.SinglePersonWrapper}>
       <div className={singlePersonStyles.SinglePersonSeparate}>
         <div
           className={singlePersonStyles.AvatarWrapperSeparate}
@@ -36,7 +36,7 @@ const SinglePerson = (props) => {
         ></div>
         <h3>{props.name}</h3>
       </div>
-    </AniLink>
+    </Link>
     )
   }
 

@@ -21,7 +21,7 @@ const Layout = (props) => {
         drawerToggleClicked={onToggleSideDrawer}
       />
       <Sidedrawer open={showSideDrawer} closed={onCloseSideDrawer} />
-      <main>{props.children}</main>
+      <main style={{scrollSnapType: 'y proximity'}}>{props.children}</main>
     </>
   );
 };
