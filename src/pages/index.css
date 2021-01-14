@@ -19,26 +19,10 @@ html {
     scroll-snap-type: y proximity;
 }
 
-#intro {
-  scroll-snap-align: start;
-}
-
-#ofeta {
-  scroll-snap-align: center !important;
-}
-
-#klinika {
+section, footer {
   scroll-snap-align: center;
-}
+}	
 
 #kadra {
-  scroll-snap-align: start;
-}
-
-#partnerzy {
-  scroll-snap-align: center;
-}
- 
-footer {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }

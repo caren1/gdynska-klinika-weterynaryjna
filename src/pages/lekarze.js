@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import personStyles from "./person.module.scss";
+import lekarzeStyles from "./lekarze.module.scss";
 
 import Layout from "../components/Layout/Layout";
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
@@ -31,12 +31,12 @@ const Lekarze = ({ data }) => {
 
   return (
     <Layout>
-      <div className={personStyles.DoctorsPage}>
+      <div className={lekarzeStyles.DoctorsPage}>
         <i
-          className={personStyles.BackArrow}
+          className={lekarzeStyles.BackArrow}
           onClick={() => window.history.back()}
         ></i>
-        <div className={personStyles.DoctorsWrapper}>
+        <div className={lekarzeStyles.DoctorsWrapper}>
           {doctorsMarkdown.map(({ node }) => (
             <SinglePerson
               separate={true}

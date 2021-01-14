@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import personStyles from "./person.module.scss";
+import techStyles from "./technicy.module.scss";
 
 import Layout from "../components/Layout/Layout";
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
@@ -31,9 +31,12 @@ const Technicy = ({ data }) => {
 
   return (
     <Layout>
-      <div className={personStyles.DoctorsPage}>
-      <i className={personStyles.BackArrow} onClick={() => window.history.back()}></i>
-        <div className={personStyles.DoctorsWrapper}>
+      <div className={techStyles.TechniciansPage}>
+        <i
+          className={techStyles.BackArrow}
+          onClick={() => window.history.back()}
+        ></i>
+        <div className={techStyles.TechniciansWrapper}>
           {techMarkdown.map(({ node }) => (
             <SinglePerson
               separate={true}

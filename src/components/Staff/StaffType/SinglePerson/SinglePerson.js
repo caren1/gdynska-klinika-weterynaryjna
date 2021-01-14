@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import singlePersonStyles from "./SinglePerson.module.scss";
 
-// import AniLink from "gatsby-plugin-transition-link/AniLink"
-
-
 
 const SinglePerson = (props) => {
   let backgroundProperties = {

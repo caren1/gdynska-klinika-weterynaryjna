@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import personStyles from "./person.module.scss";
+import personStyles from "./lekarze.module.scss";
 
 import Layout from "../components/Layout/Layout";
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
