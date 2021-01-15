@@ -5,6 +5,10 @@
     padding: 1rem 2rem;
     margin-right: 110px;
 
+    @media (max-width: 1250px) {
+        margin-right: 40px;
+    }
+
     @media (max-width: 1199px) {
         max-width: 55%;
         margin-right: 10px;
@@ -78,16 +82,16 @@
         }
 
         @media (max-width: 600px) {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: 0;
         }
     }
 
     .Buttons {
-        margin-top: 2.8rem;
+        margin: 2rem 0;
 
         @media (max-width: 600px) {
-            margin: 2rem 0;
+            margin: 2rem 0 3rem 0;
         }
 
     }

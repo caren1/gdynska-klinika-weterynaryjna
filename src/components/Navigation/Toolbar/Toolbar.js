@@ -30,9 +30,9 @@ const Toolbar = (props) => {
   if (scrollState || props.detailed) {
     toolbar = (
       <header id="header" className={toolbarStyles.SecondaryToolbar}>
-        <Logo secondary={true} />
+        <Logo secondary={true}/>
 
-        <DrawerToggle secondary={true} clicked={props.drawerToggleClicked} />
+        <DrawerToggle secondary={true} clicked={props.drawerToggleClicked}/>
 
         <nav className={toolbarStyles.DesktopOnlySecondary}>
           <ul>
@@ -52,8 +52,8 @@ const Toolbar = (props) => {
     );
   } else {
     toolbar = (
-      <header id="header" className={toolbarStyles.Toolbar}>
-        <Logo />
+      <header id="header" className={toolbarStyles.Toolbar} >
+        <Logo/>
         <DrawerToggle clicked={props.drawerToggleClicked} />
         <nav className={toolbarStyles.DesktopOnly}>
           <NavigationItems />

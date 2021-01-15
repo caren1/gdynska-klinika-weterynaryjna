@@ -13,6 +13,7 @@
     bottom: 0;
     left: 10%;
 
+
     @media (max-width: 1110px) {
         height: 55%;
     }
@@ -124,6 +125,10 @@
     }
 
     .ListParagraph {
+
+        text-decoration: none;
+        color: white;
+
         @media (max-width: 766px) {
             font-size: 12px;
         }

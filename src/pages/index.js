@@ -28,10 +28,10 @@ const IndexPage = () => {
       <Layout>
         <Intro />
         <Offer />
-        <About />
-        <Staff />
-        <Partners />
-        <Footer />
+        {/* <About /> */}
+        {/* <Staff /> */}
+        {/* <Partners /> */}
+        {/* <Footer /> */}
       </Layout>
     </StaffContextProvider>
   );

@@ -12,6 +12,7 @@ const DrawerToggle = (props) => {
       className={drawerStyles.DrawerToggle}
       onClick={props.clicked}
       role="menu"
+      tabIndex="1"
     >
       <div className={drawerStyles.SingleLine} style={inlineStyle}></div>
       <div className={drawerStyles.SingleLine} style={inlineStyle}></div>

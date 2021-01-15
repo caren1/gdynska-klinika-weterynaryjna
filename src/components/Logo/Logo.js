@@ -68,6 +68,7 @@ const Logo = (props) => {
 
   let logo = (
     <div
+   
       className={logoStyles.Logo}
       onClick={() => {
         scrollTo(`#intro`);
@@ -80,6 +81,7 @@ const Logo = (props) => {
   if (isSecondary) {
     logo = (
       <div
+      tabIndex="2"
         className={logoStyles.Logo}
         onClick={(event) => {
           event.preventDefault();

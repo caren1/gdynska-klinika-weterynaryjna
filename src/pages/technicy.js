@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { graphql } from "gatsby";
 import techStyles from "./technicy.module.scss";
+import StaffContext from '../context/staff-context'
 
 import Layout from "../components/Layout/Layout";
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
@@ -28,6 +29,9 @@ const Technicy = ({ data }) => {
   const techMarkdown = allMarkdownRemark.edges.filter((edge) =>
     edge.node.frontmatter.slug.includes("/technicy")
   );
+
+  const staffContext = useContext(StaffContext);
+  console.log('techs context', staffContext);
 
   return (
     <Layout>
