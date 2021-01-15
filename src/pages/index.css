@@ -28,8 +28,13 @@ section, footer {
 }
 
 
-@media (max-width: 745px) {
+@media (max-width: 500px) {
+
+    html {
+        scroll-snap-type: none !important;
+    }
+
     section, footer, #kadra {
-        scroll-snap-align: none;
+        scroll-snap-align: none !important;
     }
 }

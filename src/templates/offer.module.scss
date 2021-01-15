@@ -1,6 +1,19 @@
 .Offer {
     margin: auto auto;
     font-family: 'Lato';
+    scroll-snap-align: start;
+    animation: onLoad 0.2s ease-in;
+
+}
+
+@keyframes onLoad {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .OfferWrapper {

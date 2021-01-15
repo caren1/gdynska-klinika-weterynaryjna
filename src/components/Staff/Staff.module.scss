@@ -2,6 +2,8 @@
     min-height: 100vh;
     max-height: 100%;
     position: relative;
+    scroll-snap-align: start;
+
 
     @media (max-width: 900px) {
         min-height: 100%;

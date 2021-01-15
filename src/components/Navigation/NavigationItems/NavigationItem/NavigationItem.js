@@ -24,7 +24,7 @@ const NavigationItem = (props) => {
   if (isSecondary) {
     linkItem = (
       <a
-      tabIndex="1"
+      tabIndex="0"
         onClick={(event) => {
           event.preventDefault();
           navigate("/");
@@ -39,7 +39,7 @@ const NavigationItem = (props) => {
   } else {
     linkItem = (
       <a
-      tabIndex="1"
+      tabIndex="0"
         onClick={(event) => {
           event.preventDefault();
           scrollTo(`#${props.section}`);

@@ -7,10 +7,16 @@
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
+    margin: auto auto;
+
 
 
     @media (max-width: 1000px) {
         padding: 1rem;
+    }
+
+    @media (max-width: 600) {
+        scroll-snap-align: none;
     }
 }
 

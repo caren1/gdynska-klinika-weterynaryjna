@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+    scroll-snap-align: start;
 
     @media (max-width: 745px) {
         padding: 1rem 0;
