@@ -1,5 +1,5 @@
 .TechniciansPage{
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,7 @@
     @media (min-width: 1000px) {
         flex-direction: row;
         flex-wrap: wrap;
+        flex: 1 1 20%;
     }
 
     > div {

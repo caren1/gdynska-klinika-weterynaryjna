@@ -62,15 +62,15 @@
 
     }
 
+    
+    @media (max-width: 720px) {
+        
+        padding: 1rem;
+    }
+    
     @media (max-width: 550px) {
         background-color: #005826;
     }
-
-    @media (max-width: 720px) {
-        height: 120px;
-        padding: 1rem;
-    }
-
     .DesktopOnlySecondary {
         width: 100%;
 
