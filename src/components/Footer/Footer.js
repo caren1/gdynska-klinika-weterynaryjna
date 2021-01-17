@@ -57,10 +57,10 @@ const Footer = () => {
           <Button type="Route" secondary={true} />
         </div>
       </div>
-      <div className={footerStyles.BackToTop} style={ scrollState ? {display: 'block'} : {display: 'none'}}>
-        <i className={footerStyles.ArrowTop} onClick={(event) => {
+      <div className={footerStyles.BackToTop} style={ scrollState ? {display: 'block'} : {display: 'none'}} onClick={(event) => {
         event.preventDefault()
-        scrollTo(`#intro`)}}></i>
+        scrollTo(`#intro`)}}>
+        <i className={footerStyles.ArrowTop} ></i>
       </div>
     </footer>
   );

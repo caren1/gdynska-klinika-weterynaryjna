@@ -19,20 +19,12 @@ module.exports = {
         description: `Nowoczesna klinika weterynaryjna w Gdyni - Specjalistyczny personel kliniki oferuje pomoc w wielu dziedzinach, szerokie spektrum nowoczesnych badań diagnostycznych oraz opiekę ambulatoryjną i szpitalną.`,
         lang: `pl`,
         display: `standalone`,
-        icon: `/static/assets/logos/GKW-long-dr-main.svg`,
+        icon: `src/assets/logos/GKW-main-vertical-logo.svg`,
         start_url: `/`,
         background_color: `#005826`,
         theme_color: `#ffffff`,
         cache_busting_mode: "none",
         crossOrigin: `use-credentials`
-      },
-    },
-    {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        workboxConfig: {
-          globPatterns: ["**/icon-path*"],
-        },
       },
     },
     {

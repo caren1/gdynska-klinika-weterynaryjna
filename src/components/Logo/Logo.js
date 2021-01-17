@@ -5,6 +5,7 @@ import secondaryLogo from "../../assets/logos/GKW-horizontal-greypaw-whitecross.
 import mobileLogo from "../../assets/logos/GKW-main-horizontal.svg";
 
 import scrollTo from "gatsby-plugin-smoothscroll";
+import { navigate } from "gatsby";
 
 const Logo = (props) => {
   const [isDesktop, setDesktop] = useState(true);
@@ -55,22 +56,11 @@ const Logo = (props) => {
     logoViewport = mobileLogo;
   }
 
-  // const module =
-
-  // if (
-  //   window.location.href.includes("/oferta") ||
-  //   window.location.href.includes("-")
-  // ) {
-  //   isSecondary = true;
-  // } else {
-  //   isSecondary = false;
-  // }
-
   let logo = (
     <div
-   
       className={logoStyles.Logo}
       onClick={() => {
+        navigate("/");
         scrollTo(`#intro`);
       }}
     >
@@ -81,11 +71,12 @@ const Logo = (props) => {
   if (isSecondary) {
     logo = (
       <div
-      tabIndex="2"
+        tabIndex="1"
         className={logoStyles.Logo}
         onClick={(event) => {
           event.preventDefault();
-          window.history.back();
+          navigate("/");
+          console.log("clicked");
           setTimeout(() => {
             scrollTo(`#intro`);
           }, 500);

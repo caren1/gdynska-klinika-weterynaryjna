@@ -30,7 +30,7 @@ const NavigationItem = (props) => {
           navigate("/");
           setTimeout(() => {
             scrollTo(`#${props.section}`);
-          }, 500);
+          }, 200);
         }}
       >
         {props.children}
