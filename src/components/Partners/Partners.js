@@ -38,7 +38,7 @@ const Partners = () => {
         title="VetiRaty"
         alt="VetiRaty"
         paragraph="Jest to system ratalny stworzony specjalnie z myślą o rynku weterynaryjnym. Umożliwia finansowanie niemal wszystkich procedur wykonywanych w placówkach weterynaryjnych. Pomaga właścicielowi zwierzęcia sfinansować koszty leczenia i rozłożyć je na wygodne raty. Placówka ma do dyspozycji narzędzie umożlwiające optymalne zaplanowanie leczenia, które nie musi być uzależnione od jego kosztów. Ma również gwarancję szybkiej zapłaty za przeprowadzone leczenie."
-        link="https://veticover.pl/"
+        link="https://vetiraty.pl/"
         linktext="więcej"
       />
     </section>
