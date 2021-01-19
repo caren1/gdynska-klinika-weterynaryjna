@@ -1,14 +1,15 @@
 .Person {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: calc(100vh + 50px);
-    padding: 2rem;
-    max-width: 90%;
+    // padding: 2rem;
+    // max-width: 90%;
     margin: 0 auto;
     position: relative;
     transition: all 0.5s ease-in;
     animation: onLoad 0.2s ease-in;
+    background-color: #005826;
 
 
     @media (max-width: 1000px) {
@@ -19,7 +20,6 @@
 
     @media (max-width: 600px) {
         padding: 1rem;
-        background-color: #005826;
     }
 }
 
@@ -39,6 +39,7 @@
     padding: 8rem;
     width: 150px;
     height: 150px;
+    margin: 0 1rem;
 
 
     @media (max-width: 1000px) {
@@ -52,30 +53,27 @@
     }
 }
 
-.CrossVertical {
-    width: 80px;
-    background-color: #005826;
-    height: 100vh;
-    position: absolute;
-    left: 160px;
-    bottom: 0;
-    z-index: -10;
+.AvatarContainer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 1000px) {
-        display: none;
+        width: 100%;
     }
-}
+    
 
-.CrossHorizontal {
-    width: 100vw;
-    background-color: #005826;
-    height: 55%;
-    position: absolute;
-    top: 200px;
-    z-index: -1;
+    > hr {
+        flex: 1 1 auto;
+        border: 3px solid white;
+        display: none;
 
-    @media (max-width: 850px) {
-        height: 85%;
+        @media (max-width: 1000px) {
+            display: block;
+            border: 2px solid white;
+        }
+
     }
 }
 
@@ -84,7 +82,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 4rem;
 
 
     @media (max-width: 1000px) {
@@ -118,7 +116,7 @@
         font-family: 'Lato';
         font-size: 1.2rem;
 
-        color: #D7D6D6;
+        color: white;
 
         @media (max-width: 600px) {
             font-size: 0.9rem;
@@ -135,11 +133,16 @@
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: absolute;
-    top: 280px;
-    left: 10%;
+    top: 290px;
+    left: 5%;
     cursor: pointer;
     z-index: 50;
     animation: dissapear 3s infinite;
+
+    @media (max-width: 1000px) {
+        top: 150px;
+        left: 10%;
+    }
 }
 
 @keyframes dissapear {

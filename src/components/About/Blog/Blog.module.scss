@@ -8,7 +8,7 @@
     left: 10%;
     text-align: right;
 
-    @media (min-width: 1500px) {
+    @media (min-width: 1700px) {
        width: 80%;
        left: 5%;
     }
@@ -30,6 +30,10 @@
         align-self: flex-end;
     }
 
+    @media (min-width: 1700px) {
+        max-width: 35%;
+    }
+
     @media (max-width: 900px) {
         position: absolute;
         bottom: 0;
@@ -44,6 +48,12 @@
 
 .InfoContainer {
     width: 55%;
+    margin-left: 8rem;
+    
+    @media (min-width: 1700px) {
+        width: 70%;
+        margin-left: 5rem;
+    }
 
     @media (max-width: 900px) {
         width: 70%;
@@ -70,7 +80,7 @@
         margin-left: auto;
         line-height: 1.2;
 
-        @media (min-width: 1500px) {
+        @media (min-width: 1700px) {
             font-size: 3rem;
         }
 
@@ -93,7 +103,7 @@
         font-size: 1.6rem;
         font-weight: lighter;
 
-        @media (min-width: 1500px) {
+        @media (min-width: 1700px) {
            font-size: 2rem;
         }
 
@@ -114,7 +124,7 @@
         padding: 6px;
         border-bottom: none;
 
-        @media (min-width: 1500px) {
+        @media (min-width: 1700px) {
            font-size: 1.5rem;
         }
 

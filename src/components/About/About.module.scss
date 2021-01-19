@@ -1,10 +1,10 @@
 .About {
-    height: 100vh;
+    height: calc(100vh + 40px);
     max-height: 100%;
     position: relative;
 
-    @media (min-width: 1500px) {
-        height: 100%;
+    @media (min-width: 1700px) {
+        // height: 100%;
     }
 
     @media (max-width: 900px) {
@@ -25,7 +25,7 @@
     min-height: 100vh;
     max-height: 100%;
 
-    @media (min-width: 1500px) {
+    @media (min-width: 1700px) {
         min-height: 100%;
     }
 
@@ -44,8 +44,8 @@
     bottom: 0;
     z-index: -10;
 
-    @media (min-width: 1500px) {
-        height: 50vh;
+    @media (min-width: 1700px) {
+        height: 75vh;
     }
 
     @media (max-width: 900px) {

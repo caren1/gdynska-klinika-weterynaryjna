@@ -15,14 +15,25 @@ const Person = ({ data }) => {
   };
 
   return (
-    <Layout detailed={true} >
-      <i className={personStyles.BackArrow} onClick={() => window.history.back()}></i>
-      
+    <Layout detailed={true}>
+      <i
+        className={personStyles.BackArrow}
+        onClick={() => window.history.back()}
+      ></i>
+
       <div className={personStyles.Person}>
-        <div
+        <div className={personStyles.AvatarContainer}>
+          <hr />
+          <div
+            className={personStyles.AvatarWrapper}
+            style={backgroundProperties}
+          ></div>
+          <hr />
+        </div>
+        {/* <div
           className={personStyles.AvatarWrapper}
           style={backgroundProperties}>
-        </div>
+        </div> */}
 
         <div className={personStyles.PersonInfo}>
           <h1 className={personStyles.PersonHeading}>{frontmatter.title}</h1>
@@ -31,9 +42,6 @@ const Person = ({ data }) => {
 
         <div className={personStyles.CrossHorizontal}></div>
         <div className={personStyles.CrossVertical}></div>
-
-        
-        
       </div>
     </Layout>
   );
