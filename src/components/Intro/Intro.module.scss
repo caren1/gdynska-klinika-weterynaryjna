@@ -9,6 +9,7 @@
     background-attachment: fixed;
     padding: 1rem;
     position: relative;
+    -webkit-background-size: cover;
 
     @media (min-width: 1700px) {
         font-size: 18px;

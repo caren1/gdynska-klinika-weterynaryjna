@@ -36,10 +36,21 @@
     left: 10%;
     cursor: pointer;
     z-index: 50;
-    animation: dissapear 3s infinite;
+    -webkit-animation: dissapear 3s infinite;
+            animation: dissapear 3s infinite;
 
     @media (max-width: 1000px) {
         top: 190px;
+    }
+}
+
+@-webkit-keyframes dissapear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

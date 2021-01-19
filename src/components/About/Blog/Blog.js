@@ -3,8 +3,8 @@ import blogStyles from "./Blog.module.scss";
 
 const Blog = ({ image, alt, title, paragraph, blogtext, link }) => {
   return (
-    <div className={blogStyles.Blog}>
-      <div className={blogStyles.ImageContainer}>
+    <div className={blogStyles.Blog} >
+      <div className={blogStyles.ImageContainer} id="blog">
         <img src={image} alt={alt} />
       </div>
       <div className={blogStyles.InfoContainer}>

@@ -7,7 +7,8 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 88, 38, 0.5);
-    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+            backdrop-filter: blur(0.3rem);
     background-clip: padding-box;
     position: absolute;
     bottom: 0;

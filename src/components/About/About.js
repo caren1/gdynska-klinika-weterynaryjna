@@ -8,7 +8,7 @@ import sectionCat from "../../assets/images/section-cat.png";
 
 const About = () => {
   return (
-    <section id="klinika" className={aboutStyles.About}>
+    <section  className={aboutStyles.About}>
       <div className={aboutStyles.CrossVertical}></div>
       <div className={aboutStyles.CrossHorizontal}></div>
       <div className={aboutStyles.AboutContainer}>

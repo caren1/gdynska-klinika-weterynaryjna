@@ -21,4 +21,4 @@ const DrawerToggle = (props) => {
   );
 };
 
-export default DrawerToggle;
+export default React.memo(DrawerToggle);

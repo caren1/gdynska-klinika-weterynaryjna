@@ -89,6 +89,10 @@
         @media (min-width: 1700px) {
             font-size: 1.2rem;
         }
+
+        @media (max-width: 900px) {
+            font-size: 0.8rem;
+        }
     }
 
     a {
