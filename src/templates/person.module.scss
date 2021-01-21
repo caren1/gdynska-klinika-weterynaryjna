@@ -151,9 +151,14 @@
     -webkit-animation: dissapear 3s infinite;
             animation: dissapear 3s infinite;
 
+            @media (max-width: 500px) {
+                top: 120px;
+                left: 10%;
+                padding: 8px;
+            }
+
     @media (max-width: 1000px) {
         top: 150px;
-        left: 10%;
     }
 }
 
