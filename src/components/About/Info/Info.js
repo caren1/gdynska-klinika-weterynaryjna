@@ -3,7 +3,7 @@ import infoStyles from "./Info.module.scss";
 
 const Info = ({ image, alt, title, paragraph }) => {
   return (
-    <div className={infoStyles.Info} id="klinika">
+    <div className={infoStyles.Info} >
             <div className={infoStyles.CrossVertical}></div>
 
             <div className={infoStyles.CrossHorizontal}></div>

@@ -26,15 +26,15 @@ const IndexPage = () => {
 
   return (
     <StaffContextProvider>
-      {/* <Layout> */}
-       {/*  <SEO />
+      <Layout>
+        <SEO />
         <Intro />
-        <Offer /> */}
+        <Offer />
         <About />
-        {/* <Staff />
+        <Staff />
         <Partners />
-        <Footer />*/}
-      {/* </Layout>  */}
+        <Footer />
+      </Layout> 
     </StaffContextProvider>
   );
 };

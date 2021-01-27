@@ -19,11 +19,11 @@ html {
     scroll-snap-type: y proximity;
 }
 
-section, footer {
+#oferta, footer {
   scroll-snap-align: center;
 }	
 
-#kadra {
+#intro, #kadra, #klinika {
     scroll-snap-align: start;
 }
 

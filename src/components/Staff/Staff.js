@@ -14,7 +14,7 @@ const Staff = () => {
   const technicians = staffContext.technicians;
 
   return (
-    <section className={staffStyles.Staff}>
+    <section id="kadra" className={staffStyles.Staff}>
       <div className={staffStyles.CrossVertical}></div>
       <div className={staffStyles.HorizontalWrapper}>
         <div className={staffStyles.CrossHorizontal}>
