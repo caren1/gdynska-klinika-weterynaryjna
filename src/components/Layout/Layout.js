@@ -17,7 +17,6 @@ const Layout = (props) => {
 
   return (
     <>
-      <SEO />
       <Toolbar
         detailed={props.detailed}
         drawerToggleClicked={onToggleSideDrawer}

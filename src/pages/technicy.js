@@ -4,6 +4,7 @@ import techStyles from "./technicy.module.scss";
 import StaffContext from '../context/staff-context'
 
 import Layout from "../components/Layout/Layout";
+import SEO from '../components/SEO/Seo'
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
 
 export const query = graphql`
@@ -35,6 +36,7 @@ const Technicy = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Technicy Weterynarii"/>
       <div className={techStyles.TechniciansPage}>
         <i
           className={techStyles.BackArrow}

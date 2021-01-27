@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout/Layout";
+import SEO from '../components/SEO/Seo'
 
 import personStyles from "./person.module.scss";
 
@@ -16,6 +17,7 @@ const Person = ({ data }) => {
 
   return (
     <Layout detailed={true}>
+      <SEO title={frontmatter.title}/>
       <i
         className={personStyles.BackArrow}
         onClick={() => window.history.back()}

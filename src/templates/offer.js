@@ -2,6 +2,7 @@ import React from "react";
 import { graphql  } from "gatsby";
 import Layout from "../components/Layout/Layout";
 import offerStyles from "./offer.module.scss";
+import SEO from "../components/SEO/Seo";
 
 const Offer = ({ data }) => {
   const { markdownRemark } = data;
@@ -14,6 +15,7 @@ const Offer = ({ data }) => {
 
   return (
     <Layout detailed={true}>
+      <SEO title={frontmatter.title}/>
       <section className={offerStyles.Offer}>
         <a className={offerStyles.Exit} onClick={onClose}/>
         <div className={offerStyles.OfferWrapper}>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "GKW · Gdyńska klinika weterynaryjna",
-    titleTemplate: "%s · Gdyńska klinika weterynaryjna",
+    title: " GKW · Gdyńska Klinika Weterynaryjna lek. wet. Tomasza Brzeskiego",
+    titleTemplate: "%s · GKW · Gdyńska Klinika Weterynaryjna lek. wet. Tomasza Brzeskiego",
     description:
       "Nowoczesna klinika weterynaryjna w Gdyni - Specjalistyczny personel kliniki oferuje pomoc w wielu dziedzinach, szerokie spektrum nowoczesnych badań diagnostycznych oraz opiekę ambulatoryjną i szpitalną.",
     url: "http://gkw.com.pl",

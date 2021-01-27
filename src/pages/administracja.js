@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import personStyles from "./lekarze.module.scss";
 
 import Layout from "../components/Layout/Layout";
+import SEO from '../components/SEO/Seo'
 import SinglePerson from "../components/Staff/StaffType/SinglePerson/SinglePerson";
 
 export const query = graphql`
@@ -31,6 +32,7 @@ const Administracja = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Administracja kliniki"/>
       <div className={personStyles.DoctorsPage}>
         <i
           className={personStyles.BackArrow}

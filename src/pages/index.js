@@ -17,6 +17,7 @@ import Footer from "../components/Footer/Footer";
 import Partners from "../components/Partners/Partners";
 
 import StaffContextProvider from "../context/staff-context";
+import SEO from "../components/SEO/Seo";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const IndexPage = () => {
   return (
     <StaffContextProvider>
       <Layout>
+        <SEO />
         <Intro />
         <Offer />
         <About />
