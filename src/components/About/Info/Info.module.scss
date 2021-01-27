@@ -4,26 +4,57 @@
     justify-content: space-evenly;
     align-items: center;
     width: 85%;
-    margin: 120px auto 60px auto;
+    justify-self: flex-start;
+    position: relative;
 
-    @media (min-width: 1700px) {
-        margin: 150px auto 60px auto;
-    }
+    // @media (min-width: 1700px) {
+    //     margin: 150px auto 60px auto;
+    // }
 
     @media (max-width: 900px) {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
         margin: 50px 0;
+        width: 90%;
     }
 
-    @media (max-width: 590px) {
+    @media (max-width: 700px) {
         width: 100%;
-        left: 0;
-        margin: 50px 0 0 0;
+        // left: 0;
+        // margin: 50px 0 0 0;
+    }
+}
+
+.CrossVertical {
+    width: 80px;
+    background-color: #005826;
+    height: 75vh;
+    position: absolute;
+    left: 11%;
+    top: 35%;
+    z-index: -10;
+
+    @media (min-width: 1700px) {
+        height: 75vh;
     }
 
-    
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
+.CrossHorizontal {
+    width: 30vw;
+    background-color: #005826;
+    height: 80px;
+    position: absolute;
+    left: -20%;
+    z-index: -10;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
 }
 
 .ImageContainer {
@@ -48,10 +79,11 @@
 .InfoContainer {
 
     width: 65%;
-    padding: 1rem;
+    padding: 2rem;
 
     @media (max-width: 900px) {
-        width: 95%;
+        width: 90%; 
+
     }
 
     @media (max-width: 500px) {
@@ -67,28 +99,44 @@
         font-family: 'Playfair Display';
         font-size: 2.4rem;
         color: #005826;
+        margin-bottom: 1rem;
 
-        @media (min-width: 1700px) {
-            font-size: 4rem;
+        @media (max-width: 1199px) {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.7rem;
         }
     }
 
     p {
         font-family: 'Lato';
         font-size: 1rem;
-        line-height: 1.2;
+        line-height: 1.5;
+        text-align: justify;
         font-weight: lighter;
+        
+        @media (max-width: 1199px) {
+            text-align: left;
+            font-size: 0.9rem;
+        }
 
         @media (min-width: 1700px) {
             font-size: 1.5rem;
         }
 
         @media (max-width: 900px) {
-            font-size: 1rem;
+            // font-size: 0.8rem;
+            text-align: center;
         }
 
         @media (max-width: 500px) {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 330px) {
+            font-size: 0.7rem;
         }
     }
 }

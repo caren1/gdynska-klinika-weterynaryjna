@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 import Sidedrawer from "../Navigation/Sidedrawer/Sidedrawer";
-import SEO from "../SEO/Seo";
 
 const Layout = (props) => {
   const [showSideDrawer, setSideDrawer] = useState(false);

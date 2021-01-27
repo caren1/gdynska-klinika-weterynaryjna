@@ -1,22 +1,12 @@
 .Blog {
     z-index: 1;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    left: 10%;
     text-align: right;
 
-    @media (min-width: 1700px) {
-       width: 80%;
-       left: 5%;
-    }
-
-    @media (max-width: 590px){
-        width: 100%;
-        height: 100%;
-    }
+   
 }
 
 .ImageContainer {
@@ -47,8 +37,9 @@
 }
 
 .InfoContainer {
-    width: 55%;
-    margin-left: 8rem;
+    // width: 55%;
+    // margin-left: 8rem;
+    padding: 0 2rem 0 0;
     
     @media (min-width: 1700px) {
         width: 70%;
