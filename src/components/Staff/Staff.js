@@ -16,16 +16,11 @@ const Staff = () => {
   return (
     <section id="kadra" className={staffStyles.Staff}>
       <div className={staffStyles.CrossVertical}></div>
+      
       <div className={staffStyles.HorizontalWrapper}>
-        <div className={staffStyles.CrossHorizontal}>
           <StaffType title="Nasi lekarze" staff={docs} />
-        </div>
-        <div className={staffStyles.CrossHorizontal}>
           <StaffType title="Technicy" staff={technicians} />
-        </div>
-        <div className={staffStyles.CrossHorizontal}>
-          <StaffType title="Administracja" staff={admins} />
-        </div>
+          <StaffType title="Administracja" staff={admins} />  
       </div>
 
       <div className={staffStyles.MobileStaff}>
@@ -50,6 +45,7 @@ const Staff = () => {
           </div>
         </Link>
       </div>
+
     </section>
   );
 };

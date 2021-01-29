@@ -7,6 +7,7 @@ const StaffType = (props) => {
     <div className={staffTypeStyles.StaffType}>
       <h2>{props.title}</h2>
       <div className={staffTypeStyles.AllStaff}>
+        <div className={staffTypeStyles.CrossHorizontal}></div>
         {props.staff.map(({ node }) => (
           <SinglePerson
             key={node.frontmatter.title}

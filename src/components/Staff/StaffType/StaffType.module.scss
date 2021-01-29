@@ -1,16 +1,12 @@
 .StaffType {
-    max-height: 300px;
-    max-width: 80%;
-    margin-left: auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
     position: relative;
-    bottom: 120px;
-    z-index: 200;
 
     h2 {
-        margin-bottom: 50px;
-        margin-left: -50px;
+        margin: 25px 0 20px 0;
+        margin-left: 55px;
         font-size: 2.4rem;
         font-family: 'Playfair Display';
 
@@ -22,5 +18,21 @@
 
 .AllStaff {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+.CrossHorizontal {
+    width: 75vw;
+    background-color: #005826;
+    height: 10px;
+    position: absolute;
+    left: -5%;
+    bottom: 30%;
+    
+    z-index: -5;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
 }
