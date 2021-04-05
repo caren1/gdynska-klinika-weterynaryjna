@@ -4,7 +4,7 @@ icon: "../assets/icons/dermatologia.svg"
 slug: "/oferta/dermatologia"
 ---
 
-Gdyńska Klinika Weterynaryjna oferuje specjalistyczne konsultacje dermatologiczne, a w tym:
+Gdyński Szpital Weterynaryjny oferuje specjalistyczne konsultacje dermatologiczne, a w tym:
 
 * leczenie dermatoz na podłożu bakteryjnym, grzybiczym, metabolicznym, endokrynologicznym, pasożytniczym, alergicznym, żywieniowym i immunologicznym
 * ocena mikroskopowa preparatów cytologicznych

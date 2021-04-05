@@ -15,7 +15,7 @@ const Contact = (props) => {
     contact = (
       <div className={contactStyles.RawContact}>
         <h2 className={contactStyles.RawHeading}>
-          Gdyńska Klinika Weterynaryjna <br />{" "}
+          Gdyński Szpital Weterynaryjny <br />{" "}
           <span>let. wet. Tomasza Brzeskiego</span>
         </h2>
         <div className={contactStyles.RawContactInfo}>
@@ -67,7 +67,7 @@ const Contact = (props) => {
     contact = (
       <div className={contactStyles.Contact}>
         <h2 className={contactStyles.Heading}>
-          Gdyńska Klinika Weterynaryjna <br />{" "}
+          Gdyński Szpital Weterynaryjny <br />{" "}
           <span>let. wet. Tomasza Brzeskiego</span>
         </h2>
         <div className={contactStyles.ContactInfo}>
@@ -88,7 +88,7 @@ const Contact = (props) => {
             </li>
             <li className={contactStyles.ListItem}>
               <div className={contactStyles.IconContainer}>
-                <img src={Klinika} alt="klinika-icon" />
+                <img src={Klinika} alt="szpital-icon" />
               </div>
               <div>
                 <p className={contactStyles.ListParagraph}>Kielecka 22</p>

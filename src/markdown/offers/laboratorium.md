@@ -4,7 +4,7 @@ icon: "../assets/icons/laboratorium.svg"
 slug: "/oferta/laboratorium"
 ---
 
-Wyniki badań wykonywanych w naszej Klinice Właściciele otrzymują tego samego dnia.
+Wyniki badań wykonywanych w naszym szpitalu Właściciele otrzymują tego samego dnia.
 
 W przypadku specjalistycznych badań diagnostycznych pobrane próbki wysyłamy do referencyjnego laboratorium IDEXX.
 

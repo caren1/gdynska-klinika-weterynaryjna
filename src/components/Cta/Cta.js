@@ -8,10 +8,10 @@ const Cta = () => {
     <div className={ctaStyles.Cta}>
       <div className={ctaStyles.CtaInfo}>
         <h1 className={ctaStyles.Heading}>
-          Nowoczesna klinika weterynaryjna w Gdyni
+          Nowoczesny szpital weterynaryjny w Gdyni
         </h1>
         <p className={ctaStyles.Paragraph}>
-          Specjalistyczny personel kliniki oferuje pomoc w wielu dziedzinach,
+          Specjalistyczny personel szpitala oferuje pomoc w wielu dziedzinach,
           szerokie spektrum nowoczesnych badań diagnostycznych oraz opiekę
           ambulatoryjną i szpitalną
         </p>

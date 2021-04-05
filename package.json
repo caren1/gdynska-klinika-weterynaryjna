@@ -1,9 +1,9 @@
 {
-  "homepage": "https://github.io/caren1/gdynska-klinika-weterynaryjna",
+  "homepage": "https:/gswet.pl",
   "name": "gkw-gdy-ska-klinika-weterynaryjna",
   "version": "1.0.0",
   "private": true,
-  "description": "GKW - Gdyńska klinika weterynaryjna",
+  "description": "GSWet - Gdyński szpital weterynaryjny",
   "author": "caren1",
   "keywords": [
     "gatsby"

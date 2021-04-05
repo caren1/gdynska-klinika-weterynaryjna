@@ -32,7 +32,7 @@ const Administracja = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Administracja kliniki"/>
+      <SEO title="Administracja szpitala"/>
       <div className={personStyles.DoctorsPage}>
         <i
           className={personStyles.BackArrow}

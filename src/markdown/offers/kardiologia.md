@@ -4,7 +4,7 @@ icon:  "../assets/icons/kardiologia.svg"
 slug: "/oferta/kardiologia"
 ---
 
-Nasza klinika oferuje szerokie możliwości diagnostyczne w obrębie kardiologii weterynaryjnej, m.in.:
+Nasz szpital oferuje szerokie możliwości diagnostyczne w obrębie kardiologii weterynaryjnej, m.in.:
 
 * przeglądowe badania RTG klatki piersiowej
 * badanie EKG (elektrokardiogram)

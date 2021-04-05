@@ -64,7 +64,7 @@ const Logo = (props) => {
         scrollTo(`#intro`);
       }}
     >
-      <img src={logoViewport} alt="GKW - Gdyńska Klinika, weterynarii logo" />
+      <img src={logoViewport} alt="GSWet - Gdyński Szpital Weterynaryjny logo" />
     </div>
   );
 
@@ -82,7 +82,7 @@ const Logo = (props) => {
           }, 500);
         }}
       >
-        <img src={logoViewport} alt="GKW - Gdyńska Klinika weterynarii logo" />
+        <img src={logoViewport} alt="GSWet - Gdyński Szpital Weterynaryjny logo" />
       </div>
     );
   }

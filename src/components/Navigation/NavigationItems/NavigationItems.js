@@ -9,7 +9,7 @@ const NavigationItems = () => {
   return (
     <ul className={navigationItemsStyles.NavigationItems}>
       <NavigationItem section="oferta">Oferta</NavigationItem>
-      <NavigationItem section="klinika">Klinika</NavigationItem>
+      <NavigationItem section="klinika">Szpital</NavigationItem>
       <NavigationItem section="klinika">Blog</NavigationItem>
       <NavigationItem section="kadra">Kadra</NavigationItem>
       <NavigationItem section="partnerzy">Partnerzy</NavigationItem>

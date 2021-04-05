@@ -45,6 +45,8 @@ const SEO = ({ title, description, image, article }) => {
         {seo.image && <meta name="twitter:image" content={seo.image} />}
         <meta name="format-detection" content="telephone=no" />
       </Helmet>
+      <Helmet>
+      </Helmet>
       <Facebook
         desc={seo.description}
         image={seo.image}

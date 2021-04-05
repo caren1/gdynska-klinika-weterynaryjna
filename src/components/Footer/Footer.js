@@ -6,15 +6,10 @@ import Contact from "../Contact/Contact";
 import Button from "../UI/Button/Button";
 
 import footerLogo from "../../assets/logos/GKW-main-logo.svg";
+import facebook from "../../assets/icons/facebook.svg"
+import instagram from "../../assets/icons/instagram.svg"
 
 const Footer = () => {
-  // useEffect(() => {
-  //     const gdyniaGKW = { lat: 54.508515246668836, lng: 18.530186576907568 }
-  //     const map = new google.maps.Map(document.getElementById('map'), {
-  //         zoom: 3,
-  //         center: gdyniaGKW
-  //     })
-  // }, [])
   const [scrollState, setScrollState] = useState(false);
 
   const navRef = useRef();
@@ -40,11 +35,17 @@ const Footer = () => {
           <img src={footerLogo} alt="GKW-footer-logo" />
         </div>
         <Contact raw={true} horizontal={true} />
+        <div className={footerStyles.IconWrapper}>
+          <a  href="https://www.facebook.com/GKWet" target="_blank"><img className={footerStyles.Icon} src={facebook} alt="facebook-icon" /></a>
+          <a  href="https://www.instagram.com/klinikaweterynaryjna/" target="_blank"><img className={footerStyles.Icon} src={instagram} alt="instagram-icon" /></a>
+        </div>
       </div>
       <div className={footerStyles.InfoSection}>
-        <div id="map" className={footerStyles.MapContainer}></div>
+        <a href="https://www.google.pl/maps/place/Gdy%C5%84ska+Klinika+Weterynaryjna+lek.+wet.+Tomasza+Brzeskiego/@54.5083595,18.5285451,17z/data=!4m5!3m4!1s0x46fda72d21c3e51f:0xe33b5f47e2bbd6ee!8m2!3d54.508372!4d18.5298969" target="_blank">
+          <div id="map" className={footerStyles.MapContainer}></div>
+        </a>
         <h1>
-          Zapraszamy do naszej kliniki, z troską zaopiekujemy się Państwa
+          Zapraszamy do naszego szpitala, z troską zaopiekujemy się Państwa
           pupilami.
         </h1>
         <p>

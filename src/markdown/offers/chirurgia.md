@@ -4,7 +4,7 @@ icon: "../assets/icons/chirurgia.svg"
 slug: "/oferta/chirurgia"
 ---
 
-Planowane operacje chirurgiczne przeprowadzane są w Gdyńskiej Klinice Weterynaryjnej od poniedziałku do piątku. Praca naszych chirurgów obejmuje zarówno chirurgię miękką jak i ortopedię, a w szczególności:
+Planowane operacje chirurgiczne przeprowadzane są w Gdyńskim Szpitalu Weterynaryjnym od poniedziałku do piątku. Praca naszych chirurgów obejmuje zarówno chirurgię miękką jak i ortopedię, a w szczególności:
 
 * zabiegi profilaktyczne (kastracje i sterylizacje)
 * operacje na jamie brzusznej
@@ -19,7 +19,7 @@ Planowane operacje chirurgiczne przeprowadzane są w Gdyńskiej Klinice Weteryna
 * operacje związane z dysplazją stawów biodrowych i łokciowych
 * zabiegi dotyczące więzadeł i ścięgien
 
-Zabiegi i operacje ratujące życie wykonywane są w naszej klinice w trybie natychmiastowym. Do takich zabiegów zaliczane są w szczególności:
+Zabiegi i operacje ratujące życie wykonywane są w naszym szpitalu w trybie natychmiastowym. Do takich zabiegów zaliczane są w szczególności:
 
 * usunięcie ciał obcych z układu oddechowego i pokarmowego
 * ostre rozszerzenie i skręt żołądka
