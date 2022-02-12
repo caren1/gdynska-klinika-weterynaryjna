@@ -1,6 +1,6 @@
 ---
 title: "Angelika Michałowska"
-image: "../../assets/images/technicians/AngelikaMichałowska.png"
+image: "../../assets/images/technicians/AngelikaMichalowska.png"
 slug: "/technicy/angelika-michalowska"
 ---
 

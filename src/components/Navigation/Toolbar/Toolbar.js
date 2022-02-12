@@ -40,10 +40,10 @@ const Toolbar = (props) => {
               Poniedziałek - Piątek : <strong>7 - 22</strong>
             </li>
             <li>
-              Sobota : <strong>8 - 22</strong>
+              Sobota : <strong>9 - 19</strong>
             </li>
             <li>
-              Niedziela : <strong>10 - 19</strong>
+              Niedziela : <strong>10 - 18</strong>
             </li>
           </ul>
           <Button type="NavCall" />

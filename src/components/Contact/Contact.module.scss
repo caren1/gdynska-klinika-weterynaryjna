@@ -173,6 +173,36 @@
     }
 }
 
+.IconWrapper{
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 770px) {
+        justify-content: center;
+    }
+
+    a {
+        
+        :hover{
+            transform: scale(1.1);
+            transition: ease-in 0.2s;
+            
+        }
+    }
+    
+    .Icon{
+        max-width: 35px;
+        max-height: 35px;
+        padding: 5px;
+
+        @media (max-width: 770px) {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }
+}
+
 .RawHeading {
 
     font-weight: 400;

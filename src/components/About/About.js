@@ -25,7 +25,7 @@ const About = () => {
           title="Poznaj historię naszych pacjentów"
           paragraph="Blog przeznaczony dla pasjonatów weterynarii."
           blogtext="zobacz blog"
-          link="www.blog.gkw.com.pl"
+          link="https://blog.gswet.pl/"
         />
         <div id="kadra"  className={aboutStyles.CrossHorizontalOverCat}></div>
       </div>

@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
         <Contact raw={true} horizontal={true} />
         <div className={footerStyles.IconWrapper}>
-          <a  href="https://www.facebook.com/GKWet" target="_blank"><img className={footerStyles.Icon} src={facebook} alt="facebook-icon" /></a>
-          <a  href="https://www.instagram.com/klinikaweterynaryjna/" target="_blank"><img className={footerStyles.Icon} src={instagram} alt="instagram-icon" /></a>
+          <a href="https://www.facebook.com/SzpitalWeterynaryjny" target="_blank"><img className={footerStyles.Icon} src={facebook} alt="facebook-icon" /></a>
+          <a href="https://www.instagram.com/szpitalweterynaryjny" target="_blank"><img className={footerStyles.Icon} src={instagram} alt="instagram-icon" /></a>
         </div>
       </div>
       <div className={footerStyles.InfoSection}>

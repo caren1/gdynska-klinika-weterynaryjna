@@ -6,6 +6,9 @@ import Klinika from "../../assets/icons/klinika.svg";
 import Telefon from "../../assets/icons/telefon.svg";
 import Weterynarz from "../../assets/icons/weterynarz.svg";
 
+import facebookWhite from "../../assets/icons/facebook-white.svg"
+import instagramWhite from "../../assets/icons/instagram-white.svg"
+
 // import Partnerzy from '../../assets/images/partners.png'
 
 const Contact = (props) => {
@@ -26,10 +29,10 @@ const Contact = (props) => {
                   Poniedziałek - Piątek : 7 - 22
                 </p>
                 <p className={contactStyles.RawListParagraph}>
-                  Sobota : 8 - 22
+                  Sobota : 9 - 19
                 </p>
                 <p className={contactStyles.RawListParagraph}>
-                  Niedziela : 10 - 19
+                  Niedziela : 10 - 18
                 </p>
               </div>
             </li>
@@ -80,9 +83,9 @@ const Contact = (props) => {
                 <p className={contactStyles.ListParagraph}>
                   Poniedziałek - Piątek : 7 - 22
                 </p>
-                <p className={contactStyles.ListParagraph}>Sobota : 8 - 22</p>
+                <p className={contactStyles.ListParagraph}>Sobota : 9 - 19</p>
                 <p className={contactStyles.ListParagraph}>
-                  Niedziela : 10 - 19
+                  Niedziela : 10 - 18
                 </p>
               </div>
             </li>
@@ -118,6 +121,10 @@ const Contact = (props) => {
               </div>
             </li>
           </ul>
+          <div className={contactStyles.IconWrapper}>
+          <a href="https://www.facebook.com/SzpitalWeterynaryjny" target="_blank"><img className={contactStyles.Icon} src={facebookWhite} alt="facebook-icon" /></a>
+          <a href="https://www.instagram.com/szpitalweterynaryjny" target="_blank"><img className={contactStyles.Icon} src={instagramWhite} alt="instagram-icon" /></a>
+          </div>
           {/* <div className={contactStyles.PartnersWrapper}>
           <img src={Partnerzy} alt="parnerzy-image" className={contactStyles.Partners}/>
         </div> */}
